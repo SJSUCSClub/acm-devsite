@@ -129,7 +129,6 @@ const CalendarPage = () => {
         <h3 style = {headerStyle3}>
           These events are accessible to all those who are interested, irrespective of their major or prior experience.
         </h3>
-        <h4>Insert Club Image</h4>
       <div dangerouslySetInnerHTML={{ __html: embedCode }} /> 
       </div>
     )
