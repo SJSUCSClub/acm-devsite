@@ -1,6 +1,6 @@
 import Image from "next/image";
 
-import TextWithImage from "../components/TextWithImage";
+import TextWithImage from "../components/about/TextWithImage";
 
 const page = () => {
   return (
@@ -38,7 +38,10 @@ const page = () => {
         </p>
 
         <h1 className="!mt-10 text-4xl font-bold">How do I get involved?</h1>
-        <TextWithImage imagePath="/about/info1.png" imageAlt="">
+        <TextWithImage
+          imagePath="/about/info1.png"
+          imageAlt="Students on a computer"
+        >
           <h2 className="font-bold text-xl">Become a Member</h2>
           <p>
             Join ACM SJSU and elevate your tech journey. Access valuable
@@ -50,7 +53,11 @@ const page = () => {
             opportunities.
           </p>
         </TextWithImage>
-        <TextWithImage reverse={true} imagePath="/about/info2.png" imageAlt="">
+        <TextWithImage
+          reverse={true}
+          imagePath="/about/info2.png"
+          imageAlt="Phone screen on ACM's instagram"
+        >
           <h2 className="font-bold text-xl">Stay Connected on Social Media</h2>
           <p>
             Stay in the loop and connected with our community through our
@@ -63,7 +70,10 @@ const page = () => {
             to stay updated on our latest events, projects, and initiatives.
           </p>
         </TextWithImage>
-        <TextWithImage imagePath="/about/info3.png" imageAlt="">
+        <TextWithImage
+          imagePath="/about/info3.png"
+          imageAlt="Students on computer"
+        >
           <h2 className="font-bold text-xl">Become a Mentor/Mentee</h2>
           <p>
             Join our community and connect with experienced mentors who are
@@ -91,6 +101,7 @@ const page = () => {
         </p>
         <TextWithImage
           reverse={true}
+          logo={true}
           imagePath="/about/software.png"
           imageAlt=""
         >
@@ -102,7 +113,7 @@ const page = () => {
             technology stacks prevalent in the industry.
           </p>
         </TextWithImage>
-        <TextWithImage imagePath="/about/hardware.png" imageAlt="">
+        <TextWithImage logo={true} imagePath="/about/hardware.png" imageAlt="">
           <p>
             This team is committed to immersing students in the world of
             hardware by engaging them in tangible projects and experiments. We
@@ -111,7 +122,12 @@ const page = () => {
             technological innovation in the industry.
           </p>
         </TextWithImage>
-        <TextWithImage reverse={true} imagePath="/about/design.png" imageAlt="">
+        <TextWithImage
+          reverse={true}
+          logo={true}
+          imagePath="/about/design.png"
+          imageAlt=""
+        >
           <p>
             Our design squad is focused on guiding students through the creative
             aspects of technology by offering hands-on experience in design
