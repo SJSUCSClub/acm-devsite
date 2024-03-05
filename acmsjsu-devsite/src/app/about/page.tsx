@@ -1,5 +1,42 @@
 import Image from "next/image";
 
+const officerData = [
+  {
+    pfp: "/pfps/Karthik.png",
+    name: "Karthik",
+    position: "President",
+    linkedin: "https://www.linkedin.com/in/karthikmanishankar/",
+  },
+
+  {
+    pfp: "/pfps/shirleyli.png",
+    name: "Shirley Li",
+    position: "Vice President",
+    linkedin: "www.linkedin.com/in/shirley-shuhua-li",
+  },
+
+  {
+    pfp: "/pfps/angela.png",
+    name: "Angela Huang",
+    position: "Secretary",
+    linkedin: "",
+  },
+
+  {
+    pfp: "/pfps/bineet.png",
+    name: "Bineet Anand",
+    position: "Social Media",
+    linkedin: "https://www.linkedin.com/in/bineet-anand/",
+  },
+
+  {
+    pfp: "/pfps/annemai.png",
+    name: "Anne Mai",
+    position: "Event Chair",
+    linkedin: "",
+  },
+];
+
 const page = () => {
   return (
     <div className="about text-text mt-20 px-[15%]">
@@ -111,9 +148,17 @@ const page = () => {
 
       <hr className="border-neutral my-10"></hr>
 
-      <div className="teams"></div>
+      <div className="teams container text-center">
+        <h1 className="!mt-20 text-4xl font-bold">Meet Our Teams</h1>
 
-      <div className="officers"></div>
+        <p className="mt-10">djklsadlksad</p>
+      </div>
+
+      <hr className="border-neutral my-10"></hr>
+
+      <div className="officers container text-center">
+        <h1 className="!mt-20 text-4xl font-bold"> Officers</h1>
+      </div>
     </div>
   );
 };
