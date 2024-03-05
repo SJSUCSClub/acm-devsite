@@ -126,16 +126,59 @@ const page = () => {
 
       <hr className="border-neutral my-10"></hr>
 
-      <div className="teams container text-center">
-        <h1 className="!mt-20 text-4xl font-bold">Meet Our Teams</h1>
-
-        <p className="mt-10">djklsadlksad</p>
+      <div className="teams space-y-4">
+        <h1 className="text-4xl text-center font-bold">Meet Our Teams</h1>
+        <p>
+          We’re dedicated to making the ACM Club a place for every student. Our
+          teams provide a gateway for students into new fields and industries.
+          You can join any of our teams to explore your interests and develop
+          new skills as a member of the club.
+        </p>
+        <TextWithImage
+          reverse={true}
+          logo={true}
+          imagePath="/about/software.png"
+          imageAlt=""
+        >
+          <p>
+            This group is committed to providing students with the chance to
+            delve into technology through practical projects and interactive
+            activities. The development branch concentrates on acquainting
+            students with software development and the diverse range of
+            technology stacks prevalent in the industry.
+          </p>
+        </TextWithImage>
+        <TextWithImage logo={true} imagePath="/about/hardware.png" imageAlt="">
+          <p>
+            This team is committed to immersing students in the world of
+            hardware by engaging them in tangible projects and experiments. We
+            concentrate on imparting knowledge about electronics, circuit
+            design, and the hardware tools and devices that are integral to
+            technological innovation in the industry.
+          </p>
+        </TextWithImage>
+        <TextWithImage
+          reverse={true}
+          logo={true}
+          imagePath="/about/design.png"
+          imageAlt=""
+        >
+          <p>
+            Our design squad is focused on guiding students through the creative
+            aspects of technology by offering hands-on experience in design
+            projects. We emphasize the principles of user interface (UI) and
+            user experience (UX) design, along with the various design tools and
+            methodologies adopted by professionals in the tech field.
+          </p>
+        </TextWithImage>
       </div>
-
       <hr className="border-neutral my-10"></hr>
-
-      <div className="officers container text-center">
-        <h1 className="!mt-20 text-4xl font-bold"> Officers</h1>
+      <div className="officers space-y-6">
+        <h1 className="text-4xl text-center font-bold">Officers</h1>
+        <h2 className="text-neutral text-xl text-center font-bold">
+          The crew behind the ship.
+        </h2>
+        <div className="grid grid-cols-6"></div>
       </div>
     </div>
   );

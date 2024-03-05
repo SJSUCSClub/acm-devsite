@@ -15,8 +15,8 @@ const TextWithImage = ({
     >
       <div className="space-y-4 shrink">{children}</div>
       <div
-        className={`relative min-w-[330px] h-[222px] ${
-          logo ? "" : " shadow-xl"
+        className={`relative  h-[222px] ${
+          logo ? "min-w-[175px]" : "min-w-[330px] shadow-xl"
         }`}
       >
         <Image
