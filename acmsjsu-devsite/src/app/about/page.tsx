@@ -1,42 +1,65 @@
 import Image from "next/image";
+import OfficerCard from "../components/about/OfficerCard";
 import TextWithImage from "../components/about/TextWithImage";
 
-const officerData = [
+const officers = [
   {
     pfp: "/pfps/Karthik.png",
     name: "Karthik",
-    position: "President",
+    position: "PRESIDENT",
     linkedin: "https://www.linkedin.com/in/karthikmanishankar/",
   },
 
   {
     pfp: "/pfps/shirleyli.png",
     name: "Shirley Li",
-    position: "Vice President",
+    position: "VICE PRESIDENT",
     linkedin: "www.linkedin.com/in/shirley-shuhua-li",
   },
 
   {
     pfp: "/pfps/angela.png",
     name: "Angela Huang",
-    position: "Secretary",
+    position: "SECRETARY",
     linkedin: "",
   },
 
   {
-    pfp: "/pfps/bineet.png",
+    pfp: "/pfps/bineet.jpeg",
     name: "Bineet Anand",
-    position: "Social Media",
+    position: "SOCIAL MEDIA",
     linkedin: "https://www.linkedin.com/in/bineet-anand/",
   },
 
   {
-    pfp: "/pfps/annemai.png",
+    pfp: "/pfps/annemai.jpeg",
     name: "Anne Mai",
-    position: "Event Chair",
-    linkedin: "",
+    position: "EVENT CHAIR",
+    linkedin: "https://www.linkedin.com/in/annepmai/",
+  },
+
+  {
+    pfp: "/pfps/tim.png",
+    name: "Timothy Kim",
+    position: "TREASURER",
+    linkedin: "https://www.linkedin.com/in/timothy-kim712/",
+  },
+
+  {
+    pfp: "/pfps/trique.jpeg",
+    name: "Trique Nguyen",
+    position: "DEV TEAM LEAD",
+    linkedin: "https://www.linkedin.com/in/trique-nguyen/",
+  },
+
+  {
+    pfp: "/pfps/galit.png",
+    name: "Galit Bolotin",
+    position: "EVENT CHAIR",
+    linkedin: "https://www.linkedin.com/in/gbolotin/",
   },
 ];
+
 const page = () => {
   return (
     <div className="about text-text my-20 px-[15%]">
@@ -178,7 +201,19 @@ const page = () => {
         <h2 className="text-neutral text-xl text-center font-bold">
           The crew behind the ship.
         </h2>
-        <div className="grid grid-cols-6"></div>
+        <div className="flex flex-col items-center justify-center gap-16 sm:gap-8 max-w-[1280px] mb-24">
+          <div className="grid grid-cols-12 sm:flex sm:flex-wrap gap-10 items-center justify-center">
+            {officers.map((officer) => (
+              <OfficerCard
+                name={officer.name}
+                position={officer.position}
+                photo={officer.pfp}
+                linkedin={officer.linkedin}
+              />
+            ))}
+          </div>
+        </div>
+        <div className="grid grid-cols-"></div>
       </div>
     </div>
   );
