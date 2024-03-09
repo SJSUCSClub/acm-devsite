@@ -1,9 +1,12 @@
 import Image from "next/image";
 import OfficerCard from "../components/about/OfficerCard";
 import TextWithImage from "../components/about/TextWithImage";
+import RightArrow from "/public/about/rightarrow.svg";
 
 const officers = [
   {
+    //unique key of child
+    key: "1",
     pfp: "/pfps/Karthik.png",
     name: "Karthik",
     position: "PRESIDENT",
@@ -11,20 +14,23 @@ const officers = [
   },
 
   {
+    key: "2",
     pfp: "/pfps/shirleyli.png",
     name: "Shirley Li",
     position: "VICE PRESIDENT",
-    linkedin: "www.linkedin.com/in/shirley-shuhua-li",
+    linkedin: "https://www.linkedin.com/in/shirley-shuhua-li",
   },
 
   {
+    key: "3",
     pfp: "/pfps/angela.png",
     name: "Angela Huang",
     position: "SECRETARY",
-    linkedin: "",
+    linkedin: "https://www.linkedin.com/in/angela-huang-725a25169/",
   },
 
   {
+    key: "4",
     pfp: "/pfps/bineet.jpeg",
     name: "Bineet Anand",
     position: "SOCIAL MEDIA",
@@ -32,6 +38,7 @@ const officers = [
   },
 
   {
+    key: "5",
     pfp: "/pfps/annemai.jpeg",
     name: "Anne Mai",
     position: "EVENT CHAIR",
@@ -39,6 +46,7 @@ const officers = [
   },
 
   {
+    key: "6",
     pfp: "/pfps/tim.png",
     name: "Timothy Kim",
     position: "TREASURER",
@@ -46,6 +54,7 @@ const officers = [
   },
 
   {
+    key: "7",
     pfp: "/pfps/trique.jpeg",
     name: "Trique Nguyen",
     position: "DEV TEAM LEAD",
@@ -53,6 +62,7 @@ const officers = [
   },
 
   {
+    key: "8",
     pfp: "/pfps/galit.png",
     name: "Galit Bolotin",
     position: "EVENT CHAIR",
@@ -194,6 +204,19 @@ const page = () => {
             methodologies adopted by professionals in the tech field.
           </p>
         </TextWithImage>
+
+        <div className="flex gap-4 items-center justify-center">
+          <button className="bg-primary py-2 px-4 rounded-full border border-border hover:border-border-hovered">
+            <a
+              href="https://forms.gle/aXjuoZ2e7TVVRJKT8"
+              target="_blank"
+              className="flex gap-3 no-underline font-bold"
+            >
+              <span className="text-white"> Become A Member </span>
+              <Image src={RightArrow} alt="right arrow" />
+            </a>
+          </button>
+        </div>
       </div>
       <hr className="border-neutral my-10"></hr>
       <div className="officers space-y-6">
@@ -205,6 +228,7 @@ const page = () => {
           <div className="grid grid-cols-12 sm:flex sm:flex-wrap gap-10 items-center justify-center">
             {officers.map((officer) => (
               <OfficerCard
+                key={officer.key}
                 name={officer.name}
                 position={officer.position}
                 photo={officer.pfp}
