@@ -5,8 +5,6 @@ import RightArrow from "/public/about/rightarrow.svg";
 
 const officers = [
   {
-    //unique key of child
-    key: "1",
     pfp: "/pfps/Karthik.png",
     name: "Karthik",
     position: "PRESIDENT",
@@ -14,7 +12,6 @@ const officers = [
   },
 
   {
-    key: "2",
     pfp: "/pfps/shirleyli.png",
     name: "Shirley Li",
     position: "VICE PRESIDENT",
@@ -22,7 +19,6 @@ const officers = [
   },
 
   {
-    key: "3",
     pfp: "/pfps/angela.png",
     name: "Angela Huang",
     position: "SECRETARY",
@@ -30,7 +26,6 @@ const officers = [
   },
 
   {
-    key: "4",
     pfp: "/pfps/bineet.jpeg",
     name: "Bineet Anand",
     position: "SOCIAL MEDIA",
@@ -38,7 +33,6 @@ const officers = [
   },
 
   {
-    key: "5",
     pfp: "/pfps/annemai.jpeg",
     name: "Anne Mai",
     position: "EVENT CHAIR",
@@ -46,7 +40,6 @@ const officers = [
   },
 
   {
-    key: "6",
     pfp: "/pfps/tim.png",
     name: "Timothy Kim",
     position: "TREASURER",
@@ -54,7 +47,6 @@ const officers = [
   },
 
   {
-    key: "7",
     pfp: "/pfps/trique.jpeg",
     name: "Trique Nguyen",
     position: "DEV TEAM LEAD",
@@ -62,7 +54,6 @@ const officers = [
   },
 
   {
-    key: "8",
     pfp: "/pfps/galit.png",
     name: "Galit Bolotin",
     position: "EVENT CHAIR",
@@ -226,9 +217,9 @@ const page = () => {
         </h2>
         <div className="flex flex-col items-center justify-center gap-16 sm:gap-8 max-w-[1280px] mb-24">
           <div className="grid grid-cols-12 sm:flex sm:flex-wrap gap-10 items-center justify-center">
-            {officers.map((officer) => (
+            {officers.map((officer, index) => (
               <OfficerCard
-                key={officer.key}
+                key={index}
                 name={officer.name}
                 position={officer.position}
                 photo={officer.pfp}
