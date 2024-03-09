@@ -209,6 +209,7 @@ const page = () => {
           </button>
         </div>
       </div>
+
       <hr className="border-neutral my-10"></hr>
       <div className="officers space-y-6">
         <h1 className="text-4xl text-center font-bold">Officers</h1>
@@ -216,7 +217,7 @@ const page = () => {
           The crew behind the ship.
         </h2>
         <div className="flex flex-col items-center justify-center gap-16 sm:gap-8 max-w-[1280px] mb-24">
-          <div className="grid grid-cols-12 sm:flex sm:flex-wrap gap-10 items-center justify-center">
+          <div className="sm:flex sm:flex-wrap gap-x-10 items-center justify-center">
             {officers.map((officer, index) => (
               <OfficerCard
                 key={index}
@@ -228,7 +229,6 @@ const page = () => {
             ))}
           </div>
         </div>
-        <div className="grid grid-cols-"></div>
       </div>
     </div>
   );

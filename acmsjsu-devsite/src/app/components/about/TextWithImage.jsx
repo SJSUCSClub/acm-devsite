@@ -9,14 +9,14 @@ const TextWithImage = ({
 }) => {
   return (
     <div
-      className={`flex items-center gap-16 ${
-        reverse ? "flex-row-reverse text-right" : ""
+      className={`flex flex-col lg:flex-row items-center gap-4 lg:gap-16 ${
+        reverse ? "lg:flex-row-reverse lg:text-right" : ""
       }`}
     >
       <div className="space-y-4 shrink">{children}</div>
       <div
         className={`relative  h-[222px] ${
-          logo ? "min-w-[175px]" : "min-w-[330px] shadow-xl"
+          logo ? "min-w-[165px]" : "min-w-[330px] shadow-xl"
         }`}
       >
         <Image
