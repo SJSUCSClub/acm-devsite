@@ -1,3 +1,4 @@
+"use client"
 import Image from "next/image";
 import Hero from "./components/Hero";
 import TestimonialCard from "./components/TestimonialCard";
@@ -5,7 +6,9 @@ import SpotLightCard from "./components/SpotlightCard";
 import GetInvolved from "./components/ButtonGetInvolved";
 import GetInvolvedCard from "./components/GetInvolvedCard";
 import FAQ from "./components/FAQ";
-
+import ACMCSHero from "acm-cs-sjsu-hero-component";
+import "acm-cs-sjsu-hero-component/dist/styles.css";
+import { inherits } from "util";
 
 const spotlightCloudHero = {
   type: "EVENT",
@@ -64,7 +67,7 @@ const semesterPlan = {
   ],
   buttonText: "Choose This Plan > ",
   buttonStyling:
-    "rounded-full bg-yellow-500 hover:bg-yellow-600 hover:text-yellow-700 no-underline text-white font-bold py-3 px-6 cursor-pointer",
+    "rounded-full bg-yellow-500 hover:bg-yellow-600 no-underline text-white font-bold py-3 px-6 cursor-pointer",
 };
 
 const annualPlan = {
@@ -78,7 +81,7 @@ const annualPlan = {
   ],
   buttonText: "Choose This Plan > ",
   buttonStyling:
-    "rounded-full bg-blue-500 hover:bg-blue-600 hover:text-blue-700 no-underline text-white font-bold py-3 px-6 cursor-pointer",
+    "rounded-full bg-[#1a6096] hover:bg-[#0c4e7e] no-underline text-white font-bold py-3 px-6 cursor-pointer",
 };
 
 
@@ -87,6 +90,16 @@ export default function Home() {
   
   return (
     <main className="flex min-h-screen flex-col items-center justify-between p-24">
+      <div className="place-content-center pb-20 min-w-full">
+        <ACMCSHero/>  
+      </div>
+      
+
+      <div className="text-4xl text-left font-[600] inline">
+          We are the largest <span className="inline text-yellow-500"> Computer Science
+        </span> organization at <span className="inline text-[#1a6096]">San José State University.</span>
+        
+      </div>
       <GetInvolved />
       <div className="w-3/4 h-px bg-black my-20"></div>
       <h1 className="!mt-10 text-4xl font-bold">Testimonials</h1>
