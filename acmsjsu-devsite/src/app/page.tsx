@@ -9,6 +9,8 @@ import FAQ from "./components/FAQ";
 import ACMCSHero from "acm-cs-sjsu-hero-component";
 import "acm-cs-sjsu-hero-component/dist/styles.css";
 import { inherits } from "util";
+import Link from "next/link";
+
 
 const spotlightCloudHero = {
   type: "EVENT",
@@ -90,10 +92,44 @@ export default function Home() {
   
   return (
     <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <div className="place-content-center pb-20 min-w-full">
-        <ACMCSHero/>  
+      <div className="flex place-content-center min-w-full">
+        <ACMCSHero/> 
       </div>
+      <div className="flex items-center place-content-center flex grid gap-5 grid-cols-4">
+         
+          
+           
+          <Link className="transition ease-in-out hover:text-white hover:scale-110 shadow-md flex text-sm border-[#d2ebff] border-2 rounded-3xl py-2 px-4 bg-[#87adcd] text-white opacity-75 transform -translate-y-20" href = "https://discord.gg/Rw85ngkExu">
+            <Image className="dark:invert pr-2" src="./icons/discord.svg" width={25} height={25}/>
+              Discord
+          </Link>
+
       
+           
+          <Link className="transition ease-in-out hover:text-white hover:scale-110 shadow-md flex text-sm border-[#d2ebff] border-2 rounded-3xl py-2 px-4 bg-[#87adcd] text-white opacity-75 transform -translate-y-20" href = "https://www.youtube.com/watch?v=dQw4w9WgXcQ">
+            <Image className="dark:invert pr-2" src="./icons/Instagram.svg" width={25} height={25}/>
+                  Instagram
+          </Link>
+    
+
+
+       
+           
+          <Link className="transition ease-in-out hover:text-white hover:scale-110 shadow-md flex text-sm border-[#d2ebff] border-2 rounded-3xl py-2 px-4 bg-[#87adcd] text-white opacity-75 transform -translate-y-20" href = "https://www.youtube.com/watch?v=dQw4w9WgXcQ">
+            <Image className="dark:invert pr-2" src="./icons/LinkedIn.svg" width={25} height={25}/>
+                  Linkedin
+          </Link>
+      
+
+ 
+          <Link  className="transition ease-in-out hover:text-white hover:scale-110 shadow-md flex text-sm border-[#d2ebff] border-2 rounded-3xl py-2 px-4 bg-[#87adcd] text-white opacity-75 transform -translate-y-20" href = "https://www.youtube.com/watch?v=dQw4w9WgXcQ">
+                Become a Member
+          </Link>
+   
+
+     
+      </div>
+    
 
       <div className="text-4xl text-left font-[600] inline">
           We are the largest <span className="inline text-yellow-500"> Computer Science
