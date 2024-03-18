@@ -91,22 +91,19 @@ const annualPlan = {
 export default function Home() {
   
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
+    <main className="text-center min-h-screen min-w-full flex-col items-center justify-between pt-10 pb-20 px-32">
       <div className="flex place-content-center min-w-full">
         <ACMCSHero/> 
       </div>
-      <div className="flex items-center place-content-center flex grid gap-5 grid-cols-4">
-         
-          
-           
-          <Link className="transition ease-in-out hover:text-white hover:scale-110 shadow-md flex text-sm border-[#d2ebff] border-2 rounded-3xl py-2 px-4 bg-[#87adcd] text-white opacity-75 transform -translate-y-20" href = "https://discord.gg/Rw85ngkExu">
+      <div className="animate-[fadeIn_2s_ease-in-out] duration-300 flex items-center place-content-center flex grid gap-5 grid-cols-4">     
+          <Link style={{}} className="font-semibold transition ease-in-out hover:text-white hover:scale-110 shadow-md flex text-md border-[#b4c9d9] border-2 rounded-3xl py-2 px-4 bg-[#87adcd] text-[#c1d6e6]  transform -translate-y-24" target="_blank" href = "https://discord.gg/Rw85ngkExu">
             <Image className="dark:invert pr-2" src="./icons/discord.svg" width={25} height={25}/>
               Discord
           </Link>
 
       
            
-          <Link className="transition ease-in-out hover:text-white hover:scale-110 shadow-md flex text-sm border-[#d2ebff] border-2 rounded-3xl py-2 px-4 bg-[#87adcd] text-white opacity-75 transform -translate-y-20" href = "https://www.youtube.com/watch?v=dQw4w9WgXcQ">
+          <Link className="font-semibold transition ease-in-out hover:text-white hover:scale-110 shadow-md flex text-md border-[#b4c9d9] border-2 rounded-3xl py-2 px-4 bg-[#87adcd] text-[#c1d6e6]  transform -translate-y-24" target="_blank" href = "https://www.youtube.com/watch?v=dQw4w9WgXcQ">
             <Image className="dark:invert pr-2" src="./icons/Instagram.svg" width={25} height={25}/>
                   Instagram
           </Link>
@@ -115,15 +112,16 @@ export default function Home() {
 
        
            
-          <Link className="transition ease-in-out hover:text-white hover:scale-110 shadow-md flex text-sm border-[#d2ebff] border-2 rounded-3xl py-2 px-4 bg-[#87adcd] text-white opacity-75 transform -translate-y-20" href = "https://www.youtube.com/watch?v=dQw4w9WgXcQ">
+          <Link className="font-semibold transition ease-in-out hover:text-white hover:scale-110 shadow-md flex text-md border-[#b4c9d9] border-2 rounded-3xl py-2 px-4 bg-[#87adcd] text-[#c1d6e6] transform -translate-y-24" target="_blank" href = "https://www.youtube.com/watch?v=dQw4w9WgXcQ">
             <Image className="dark:invert pr-2" src="./icons/LinkedIn.svg" width={25} height={25}/>
                   Linkedin
           </Link>
       
 
  
-          <Link  className="transition ease-in-out hover:text-white hover:scale-110 shadow-md flex text-sm border-[#d2ebff] border-2 rounded-3xl py-2 px-4 bg-[#87adcd] text-white opacity-75 transform -translate-y-20" href = "https://www.youtube.com/watch?v=dQw4w9WgXcQ">
+          <Link  className="transition font-bold ease-in-out hover:text-white hover:scale-110 shadow-md flex text-md border-[#ecd79c] border-2 rounded-3xl py-2 px-4 bg-[#f3c954] text-white transform -translate-y-24" target="_blank" href = "https://www.youtube.com/watch?v=dQw4w9WgXcQ">
                 Become a Member
+                <Image className="pl-2" src="./icons/right-chevron.svg" width={22} height={22}/>
           </Link>
    
 
@@ -131,18 +129,115 @@ export default function Home() {
       </div>
     
 
-      <div className="text-4xl text-left font-[600] inline">
-          We are the largest <span className="inline text-yellow-500"> Computer Science
-        </span> organization at <span className="inline text-[#1a6096]">San José State University.</span>
+      <div className="animate-[fadeIn_2s_ease-in-out] text-left inline">
+        <div className="text-5xl font-[600]">
+            We are the largest <span className="inline text-yellow-500"> Computer Science
+            </span> organization at <span className="inline text-[#1a6096]">San José State University.</span>
+       
+        </div>
         
+        <div className="mt-7 text-xl font-[600]">
+            Thinking about getting <span className="inline text-yellow-500"> involved? </span>
+         </div>
+      <div className="py-4 text-base font-normal"> Engage with other ACM at SJSU members and elevate your tech journey. Access valuable resources like mock interviews for interview prep, thrilling hackathons, and coding competitions. Connect with industry leaders like Apple, Tesla, and <b>Google</b> for exclusive networking opportunities. 
+       </div>
+         
+         <Link className="flex text-[#1a6096] pb-14" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">
+          Become a member >
+         </Link>
       </div>
-      <GetInvolved />
-      <div className="w-3/4 h-px bg-black my-20"></div>
-      <h1 className="!mt-10 text-4xl font-bold">Testimonials</h1>
-      <h2 className="text-1xl font-bold mb-2 pt-3 text-gray-500">
+
+      <div className="border-y-2 place-items-center grid grid-cols-3 grid-rows-1 py-12">
+        <Image src="./icons/applelogo.svg" width={95} height={95}/>
+        <Image src="./icons/teslalogo.svg" width={95} height={95}/>
+        <Image src="./icons/googlelogo.svg" width={95} height={95}/>
+
+      </div>
+
+      <div className="border-y-2 place-items-center py-5">
+          <h1 className="!mt-10 text-4xl font-bold">Teams</h1>
+          <h2 className="text-1xl font-bold mb-2 pt-3 text-gray-400">
+          We have a place for everyone.
+          </h2>
+        <div className="place-items-center grid grid-flow-col grid-cols-3 grid-rows-1 py-10">
+            <div className="text-[#8F69C2] font-semibold stroke-slate-500">
+            <Image className="py-3" src="./icons/softwareicon.svg" width={105} height={105}/>
+              Software 
+            </div>
+
+            <div className="text-[#C28F69] font-bold">
+            <Image className="py-3" src="./icons/hardwareicon.svg" width={105} height={105}/>
+              Hardware 
+            </div>
+
+            <div className="text-[#69C28F] font-bold">
+            <Image className="py-3" src="./icons/designicon.svg" width={105} height={105}/>
+              Design 
+            </div>
+
+          </div>
+      </div>
+
+     
+        <div className="p-50 pt-16 border-y-2 pb-5">
+         <h1 className="text-4xl font-bold">Spotlights</h1>
+          <h2 className="text-1xl font-bold pb-10 pt-3 text-gray-400">
+           Everywhere you go.
+        </h2>
+          <div className="flex min-w-fit overflow-scroll grid grid-cols-1 pb-6 gap-8 justify-between">
+            <SpotLightCard 
+              href=""
+              image=""
+              title="Test Event"
+              description="come learn why computers compute things"
+              ctaText="what does this do"
+            />
+
+            <SpotLightCard 
+              href=""
+              image=""
+              title="Test Event"
+              description="come learn why computers compute things"
+              ctaText="what does this do"
+            />
+
+            <SpotLightCard 
+              href=""
+              image=""
+              title="Test Event"
+              description="come learn why computers compute things"
+              ctaText="what does this do"
+            />
+
+            <SpotLightCard 
+              href=""
+              image=""
+              title="Test Event"
+              description="come learn why computers compute things"
+              ctaText="what does this do"
+            />
+
+          <SpotLightCard 
+              href=""
+              image=""
+              title="Test Event"
+              description="come learn why computers compute things"
+              ctaText="what does this do"
+            />
+          </div>
+          <GetInvolved />
+
+
+        </div>
+     
+
+     
+      
+      <h1 className="pt-16 text-4xl font-bold">Testimonials</h1>
+      <h2 className="text-1xl font-bold pb-4 pt-3 text-gray-400">
         From our dedicated members and supportive alumni.
       </h2>
-      <div className="p-50 grid grid-cols-1 sm:grid-cols-3 gap-8 flex justify-between pt-10">
+      <div className="p-50 flex min-w-fit overflow-scroll grid grid-cols-1 pb-6 gap-8 justify-between">
         <TestimonialCard
           text={testimonial1.text}
           name={testimonial1.name}

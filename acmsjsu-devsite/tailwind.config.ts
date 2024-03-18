@@ -8,8 +8,13 @@ const config: Config = {
   ],
   theme: {
     extend: {
-      animation: {
-        "button-hover": "hover:-transition-y-1",
+      animation: {},
+
+      keyframes: {
+        fadeIn: {
+          from: { opacity: "0" },
+          to: { opacity: "1" },
+        },
       },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
