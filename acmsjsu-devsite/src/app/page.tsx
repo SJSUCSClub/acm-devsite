@@ -84,68 +84,67 @@ const annualPlan = {
 export default function Home() {
   return (
     <>
-    <main className="flex min-h-screen flex-col items-center justify-between p-24 ">
-      <GetInvolved />
-      <div className="w-3/4 h-px bg-black my-20"></div>
-      <h1 className="!mt-10 text-4xl font-bold">Testimonials</h1>
-      <h2 className="text-1xl font-bold mb-2 pt-3 text-gray-500">
-        From our dedicated members and supportive alumni.
-      </h2>
-      <div className="p-50 grid grid-cols-1 sm:grid-cols-3 gap-8 flex justify-between pt-10">
-        <TestimonialCard
-          text={testimonial1.text}
-          name={testimonial1.name}
-          job={testimonial1.job}
-        />
-        <TestimonialCard
-          text={testimonial2.text}
-          name={testimonial2.name}
-          job={testimonial2.job}
-        />
-        <TestimonialCard
-          text={testimonial3.text}
-          name={testimonial3.name}
-          job={testimonial3.job}
-        />
+      <main className="flex min-h-screen flex-col items-center justify-between p-24 ">
+        <GetInvolved />
+        <div className="w-3/4 h-px bg-black my-20"></div>
+        <h1 className="!mt-10 text-4xl font-bold">Testimonials</h1>
+        <h2 className="text-1xl font-bold mb-2 pt-3 text-gray-500">
+          From our dedicated members and supportive alumni.
+        </h2>
+        <div className="p-50 grid grid-cols-1 sm:grid-cols-3 gap-8 flex justify-between pt-10">
+          <TestimonialCard
+            text={testimonial1.text}
+            name={testimonial1.name}
+            job={testimonial1.job}
+          />
+          <TestimonialCard
+            text={testimonial2.text}
+            name={testimonial2.name}
+            job={testimonial2.job}
+          />
+          <TestimonialCard
+            text={testimonial3.text}
+            name={testimonial3.name}
+            job={testimonial3.job}
+          />
+        </div>
+        <h1 className="!mt-10 text-4xl font-bold pt-10">Get Involved</h1>
+        <h2 className="text-1xl font-bold mb-2 pt-3 text-gray-500">
+          Become a member and take advantage of member perks today!
+        </h2>
+        <div className="p-50 grid grid-cols-1 sm:grid-cols-3 gap-8 flex justify-between pt-10">
+          <GetInvolvedCard
+            plan={freePlan.plan}
+            price={freePlan.price}
+            description={freePlan.description}
+            priceStyling={freePlan.priceStyling}
+            textList={freePlan.textList}
+            buttonText={freePlan.buttonText}
+            buttonStyling={freePlan.buttonStyling}
+          />
+          <GetInvolvedCard
+            plan={semesterPlan.plan}
+            price={semesterPlan.price}
+            description={semesterPlan.description}
+            priceStyling={semesterPlan.priceStyling}
+            textList={semesterPlan.textList}
+            buttonText={semesterPlan.buttonText}
+            buttonStyling={semesterPlan.buttonStyling}
+          />
+          <GetInvolvedCard
+            plan={annualPlan.plan}
+            price={annualPlan.price}
+            description={annualPlan.description}
+            priceStyling={annualPlan.priceStyling}
+            textList={annualPlan.textList}
+            buttonText={annualPlan.buttonText}
+            buttonStyling={annualPlan.buttonStyling}
+          />
+        </div>
+      </main>
+      <div className="relative bg-black w-full h-[650px]">
+        <FAQ />
       </div>
-      <h1 className="!mt-10 text-4xl font-bold pt-10">Get Involved</h1>
-      <h2 className="text-1xl font-bold mb-2 pt-3 text-gray-500">
-        Become a member and take advantage of member perks today!
-      </h2>
-      <div className="p-50 grid grid-cols-1 sm:grid-cols-3 gap-8 flex justify-between pt-10">
-        <GetInvolvedCard
-          plan={freePlan.plan}
-          price={freePlan.price}
-          description={freePlan.description}
-          priceStyling={freePlan.priceStyling}
-          textList={freePlan.textList}
-          buttonText={freePlan.buttonText}
-          buttonStyling={freePlan.buttonStyling}
-        />
-        <GetInvolvedCard
-          plan={semesterPlan.plan}
-          price={semesterPlan.price}
-          description={semesterPlan.description}
-          priceStyling={semesterPlan.priceStyling}
-          textList={semesterPlan.textList}
-          buttonText={semesterPlan.buttonText}
-          buttonStyling={semesterPlan.buttonStyling}
-        />
-        <GetInvolvedCard
-          plan={annualPlan.plan}
-          price={annualPlan.price}
-          description={annualPlan.description}
-          priceStyling={annualPlan.priceStyling}
-          textList={annualPlan.textList}
-          buttonText={annualPlan.buttonText}
-          buttonStyling={annualPlan.buttonStyling}
-        />
-      </div>
-      
-    </main>
-    <div className="relative bg-black w-full h-[600px]">
-        <FAQ/>
-    </div>
     </>
   );
 }
