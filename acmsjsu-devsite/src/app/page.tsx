@@ -6,7 +6,6 @@ import GetInvolved from "./components/ButtonGetInvolved";
 import GetInvolvedCard from "./components/GetInvolvedCard";
 import FAQ from "./components/FAQ";
 
-
 const spotlightCloudHero = {
   type: "EVENT",
   title: "Google Cloud Hero 2023",
@@ -19,6 +18,7 @@ const spotlightRestAPI = {
   description:
     "Learn how to create and implement REST API’s into your programs.",
 };
+
 const testimonial1 = {
   text: '"The hands-on experience I gained from the club\'s workshops has been invaluable for my software development skills."',
   name: "JOHNSON",
@@ -81,12 +81,10 @@ const annualPlan = {
     "rounded-full bg-blue-500 hover:bg-blue-600 hover:text-blue-700 no-underline text-white font-bold py-3 px-6 cursor-pointer",
 };
 
-
-
 export default function Home() {
-  
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
+    <>
+    <main className="flex min-h-screen flex-col items-center justify-between p-24 ">
       <GetInvolved />
       <div className="w-3/4 h-px bg-black my-20"></div>
       <h1 className="!mt-10 text-4xl font-bold">Testimonials</h1>
@@ -114,7 +112,7 @@ export default function Home() {
       <h2 className="text-1xl font-bold mb-2 pt-3 text-gray-500">
         Become a member and take advantage of member perks today!
       </h2>
-      <div className="p-50 grid grid-cols-1 sm:grid-cols-3 gap-8 flex justify-between pt-10 ">
+      <div className="p-50 grid grid-cols-1 sm:grid-cols-3 gap-8 flex justify-between pt-10">
         <GetInvolvedCard
           plan={freePlan.plan}
           price={freePlan.price}
@@ -142,13 +140,12 @@ export default function Home() {
           buttonText={annualPlan.buttonText}
           buttonStyling={annualPlan.buttonStyling}
         />
-        
-        
-        
       </div>
-
       
-     
     </main>
+    <div className="relative bg-black w-full h-[600px]">
+        <FAQ/>
+    </div>
+    </>
   );
 }
