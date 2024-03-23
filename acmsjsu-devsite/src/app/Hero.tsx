@@ -128,7 +128,7 @@ const Hero = () => {
 
         
             
-            <Link className="font-semibold transition ease-in-out hover:text-white hover:scale-110 shadow-md flex text-md border-[#b4c9d9] border-2 rounded-3xl py-2 px-4 bg-[#87adcd] text-[#c1d6e6]  transform -translate-y-24" target="_blank" href = "https://www.youtube.com/watch?v=dQw4w9WgXcQ">
+            <Link className="font-semibold transition ease-in-out hover:text-white hover:scale-110 shadow-md flex text-md border-[#b4c9d9] border-2 rounded-3xl py-2 px-4 bg-[#87adcd] text-[#c1d6e6]  transform -translate-y-24" target="_blank" href = "https://www.instagram.com/sjsuacm/">
                 <Image className="dark:invert pr-2" src="./icons/Instagram.svg" width={25} height={25} alt={""}/>
                     Instagram
             </Link>
@@ -137,14 +137,14 @@ const Hero = () => {
 
         
             
-            <Link className="font-semibold transition ease-in-out hover:text-white hover:scale-110 shadow-md flex text-md border-[#b4c9d9] border-2 rounded-3xl py-2 px-4 bg-[#87adcd] text-[#c1d6e6] transform -translate-y-24" target="_blank" href = "https://www.youtube.com/watch?v=dQw4w9WgXcQ">
+            <Link className="font-semibold transition ease-in-out hover:text-white hover:scale-110 shadow-md flex text-md border-[#b4c9d9] border-2 rounded-3xl py-2 px-4 bg-[#87adcd] text-[#c1d6e6] transform -translate-y-24" target="_blank" href = "https://www.linkedin.com/company/sjsu-computer-science-club/about/">
                 <Image className="dark:invert pr-2" src="./icons/LinkedIn.svg" width={25} height={25} alt={""}/>
                     Linkedin
             </Link>
         
 
     
-            <Link  className="transition font-bold ease-in-out hover:text-white hover:scale-110 shadow-md flex text-md border-[#ecd79c] border-2 rounded-3xl py-2 px-4 bg-[#f3c954] text-white transform -translate-y-24" target="_blank" href = "https://www.youtube.com/watch?v=dQw4w9WgXcQ">
+            <Link  className="transition font-bold ease-in-out hover:text-white hover:scale-110 shadow-md flex text-md border-[#ecd79c] border-2 rounded-3xl py-2 px-4 bg-[#f3c954] text-white transform -translate-y-24" target="_blank" href = "">
                     Become a Member
                     <Image className="pl-2" src="./icons/right-chevron.svg" width={22} height={22} alt={""}/>
             </Link>

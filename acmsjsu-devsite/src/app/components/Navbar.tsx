@@ -16,7 +16,6 @@ const Navbar = () => {
         
         <LinkCard path="/about" pathName="About Us" />
         <LinkCard path="/eventspage" pathName="Events" />
-        <LinkCard path="/workshops" pathName="Projects"/>
         <LinkCard path="/blog" pathName="Contact"/>
          
       </div>
