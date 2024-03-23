@@ -9,7 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "acm-cs-sjsu-hero-component": "^1.0.2",
+    "acm-cs-sjsu-hero-component": "^1.0.3",
     "ascii-art": "^2.8.5",
     "next": "^14.1.1",
     "prettier": "^3.2.5",
