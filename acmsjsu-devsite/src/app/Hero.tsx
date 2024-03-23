@@ -117,7 +117,7 @@ const Hero = () => {
     const [card, setSpotlightPast] = useState(spotlights)
     return (
     <div className="text-center min-h-screen min-w-full flex-col items-center justify-between pt-10 pb-20 px-32">
-        <div className="flex place-content-center min-w-full">
+        <div className="flex place-content-center min-w-full ">
             <ACMCSHero/> 
         </div>
         <div className="animate-[fadeIn_2s_ease-in-out] duration-300 flex items-center place-content-center flex grid gap-5 grid-cols-4">     
