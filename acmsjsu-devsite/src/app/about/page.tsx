@@ -1,8 +1,69 @@
 import Image from "next/image";
+import OfficerCard from "../components/about/OfficerCard";
+import TextWithImage from "../components/about/TextWithImage";
+import RightArrow from "/public/about/rightarrow.svg";
+
+const officers = [
+  {
+    pfp: "/pfps/Karthik.png",
+    name: "Karthik",
+    position: "PRESIDENT",
+    linkedin: "https://www.linkedin.com/in/karthikmanishankar/",
+  },
+
+  {
+    pfp: "/pfps/shirleyli.png",
+    name: "Shirley Li",
+    position: "VICE PRESIDENT",
+    linkedin: "https://www.linkedin.com/in/shirley-shuhua-li",
+  },
+
+  {
+    pfp: "/pfps/angela.png",
+    name: "Angela Huang",
+    position: "SECRETARY",
+    linkedin: "https://www.linkedin.com/in/angela-huang-725a25169/",
+  },
+
+  {
+    pfp: "/pfps/bineet.jpeg",
+    name: "Bineet Anand",
+    position: "SOCIAL MEDIA",
+    linkedin: "https://www.linkedin.com/in/bineet-anand/",
+  },
+
+  {
+    pfp: "/pfps/annemai.jpeg",
+    name: "Anne Mai",
+    position: "EVENT CHAIR",
+    linkedin: "https://www.linkedin.com/in/annepmai/",
+  },
+
+  {
+    pfp: "/pfps/tim.png",
+    name: "Timothy Kim",
+    position: "TREASURER",
+    linkedin: "https://www.linkedin.com/in/timothy-kim712/",
+  },
+
+  {
+    pfp: "/pfps/trique.jpeg",
+    name: "Trique Nguyen",
+    position: "DEV TEAM LEAD",
+    linkedin: "https://www.linkedin.com/in/trique-nguyen/",
+  },
+
+  {
+    pfp: "/pfps/galit.png",
+    name: "Galit Bolotin",
+    position: "EVENT CHAIR",
+    linkedin: "https://www.linkedin.com/in/gbolotin/",
+  },
+];
 
 const page = () => {
   return (
-    <div className="about text-text mt-20 px-[15%]">
+    <div className="about text-text my-20 px-[15%]">
       <div className="intro space-y-4">
         <h1 className="text-4xl font-bold">
           What is <span className="text-primary">ACM</span> at{" "}
@@ -36,84 +97,139 @@ const page = () => {
         </p>
 
         <h1 className="!mt-10 text-4xl font-bold">How do I get involved?</h1>
-        <div className="flex items-center gap-20">
-          <div className="space-y-4 shrink">
-            <h2 className="font-bold text-xl">Become a Member</h2>
-            <p>
-              Join ACM SJSU and elevate your tech journey. Access valuable
-              resources like mock interviews for interview prep, thrilling
-              hackathons, and coding competitions. Connect with industry leaders
-              like <span className="font-bold">Apple</span>,{" "}
-              <span className="font-bold">Tesla</span>, and{" "}
-              <span className="font-bold">Google</span> for exclusive networking
-              opportunities.
-            </p>
-          </div>
-          <div className="relative min-w-[330px] h-[222px]">
-            <Image
-              src="/info1.png"
-              fill
-              alt="Image of students on computers"
-              className="rounded-lg object-cover"
-            />
-          </div>
-        </div>
-        <div className="flex flex-row-reverse items-center gap-20 text-right">
-          <div className="space-y-4 shrink">
-            <h2 className="font-bold text-xl">
-              Stay Connected on Social Media
-            </h2>
-            <p>
-              Stay in the loop and connected with our community through our
-              various social media channels. Follow us on platforms like{" "}
-              <a href="https://www.instagram.com/sjsuacm/">Instagram</a>,{" "}
-              <a href="https://discord.gg/yHky9bXRdE">Discord</a>, and{" "}
-              <a href="https://www.linkedin.com/company/sjsu-computer-science-club/">
-                LinkedIn
-              </a>{" "}
-              to stay updated on our latest events, projects, and initiatives.
-            </p>
-          </div>
-          <div className="relative min-w-[330px] h-[222px]">
-            <Image
-              src="/info2.png"
-              fill
-              alt="Image of students on computers"
-              className="rounded-lg object-cover"
-            />
-          </div>
-        </div>
-        <div className="flex items-center gap-20">
-          <div className="space-y-4 shrink">
-            <h2 className="font-bold text-xl">Become a Mentor/Mentee</h2>
-            <p>
-              Join our community and connect with experienced mentors who are
-              eager to share their knowledge and insights. As a mentee,
-              you&apos;ll gain valuable guidance to navigate your academic and
-              career journey successfully.
-            </p>
-            <p>
-              If you&apos;re an experienced professional looking to give back
-              and make a meaningful impact, consider becoming a mentor and
-              providing guidance to the next generation of tech enthusiasts.
-            </p>
-          </div>
-          <div className="relative min-w-[330px] h-[222px]">
-            <Image
-              src="/info3.png"
-              fill
-              alt="Image of students on computers"
-              className="rounded-lg object-cover"
-            />
-          </div>
-        </div>
+        <TextWithImage
+          imagePath="/about/info1.png"
+          imageAlt="Students on a computer"
+        >
+          <h2 className="font-bold text-xl">Become a Member</h2>
+          <p>
+            Join ACM SJSU and elevate your tech journey. Access valuable
+            resources like mock interviews for interview prep, thrilling
+            hackathons, and coding competitions. Connect with industry leaders
+            like <span className="font-bold">Apple</span>,{" "}
+            <span className="font-bold">Tesla</span>, and{" "}
+            <span className="font-bold">Google</span> for exclusive networking
+            opportunities.
+          </p>
+        </TextWithImage>
+        <TextWithImage
+          reverse={true}
+          imagePath="/about/info2.png"
+          imageAlt="Phone screen on ACM's instagram"
+        >
+          <h2 className="font-bold text-xl">Stay Connected on Social Media</h2>
+          <p>
+            Stay in the loop and connected with our community through our
+            various social media channels. Follow us on platforms like{" "}
+            <a href="https://www.instagram.com/sjsuacm/">Instagram</a>,{" "}
+            <a href="https://discord.gg/yHky9bXRdE">Discord</a>, and{" "}
+            <a href="https://www.linkedin.com/company/sjsu-computer-science-club/">
+              LinkedIn
+            </a>{" "}
+            to stay updated on our latest events, projects, and initiatives.
+          </p>
+        </TextWithImage>
+        <TextWithImage
+          imagePath="/about/info3.png"
+          imageAlt="Students on computer"
+        >
+          <h2 className="font-bold text-xl">Become a Mentor/Mentee</h2>
+          <p>
+            Join our community and connect with experienced mentors who are
+            eager to share their knowledge and insights. As a mentee,
+            you&apos;ll gain valuable guidance to navigate your academic and
+            career journey successfully.
+          </p>
+          <p>
+            If you&apos;re an experienced professional looking to give back and
+            make a meaningful impact, consider becoming a mentor and providing
+            guidance to the next generation of tech enthusiasts.
+          </p>
+        </TextWithImage>
       </div>
 
       <hr className="border-neutral my-10"></hr>
 
-      <div className="teams"></div>
+      <div className="teams space-y-4">
+        <h1 className="text-4xl text-center font-bold">Meet Our Teams</h1>
+        <p>
+          We’re dedicated to making the ACM Club a place for every student. Our
+          teams provide a gateway for students into new fields and industries.
+          You can join any of our teams to explore your interests and develop
+          new skills as a member of the club.
+        </p>
+        <TextWithImage
+          reverse={true}
+          logo={true}
+          imagePath="/about/software.png"
+          imageAlt=""
+        >
+          <p>
+            This group is committed to providing students with the chance to
+            delve into technology through practical projects and interactive
+            activities. The development branch concentrates on acquainting
+            students with software development and the diverse range of
+            technology stacks prevalent in the industry.
+          </p>
+        </TextWithImage>
+        <TextWithImage logo={true} imagePath="/about/hardware.png" imageAlt="">
+          <p>
+            This team is committed to immersing students in the world of
+            hardware by engaging them in tangible projects and experiments. We
+            concentrate on imparting knowledge about electronics, circuit
+            design, and the hardware tools and devices that are integral to
+            technological innovation in the industry.
+          </p>
+        </TextWithImage>
+        <TextWithImage
+          reverse={true}
+          logo={true}
+          imagePath="/about/design.png"
+          imageAlt=""
+        >
+          <p>
+            Our design squad is focused on guiding students through the creative
+            aspects of technology by offering hands-on experience in design
+            projects. We emphasize the principles of user interface (UI) and
+            user experience (UX) design, along with the various design tools and
+            methodologies adopted by professionals in the tech field.
+          </p>
+        </TextWithImage>
 
-      <div className="officers"></div>
+        <div className="flex gap-4 items-center justify-center">
+          <button className="bg-primary py-2 px-4 rounded-full border border-border hover:border-border-hovered">
+            <a
+              href="https://forms.gle/aXjuoZ2e7TVVRJKT8"
+              target="_blank"
+              className="flex gap-3 no-underline font-bold"
+            >
+              <span className="text-white"> Become A Member </span>
+              <Image src={RightArrow} alt="right arrow" />
+            </a>
+          </button>
+        </div>
+      </div>
+
+      <hr className="border-neutral my-10"></hr>
+      <div className="officers space-y-6">
+        <h1 className="text-4xl text-center font-bold">Officers</h1>
+        <h2 className="text-neutral text-xl text-center font-bold">
+          The crew behind the ship.
+        </h2>
+        <div className="flex flex-col items-center justify-center gap-16 sm:gap-8 max-w-[1280px] mb-24">
+          <div className="sm:flex sm:flex-wrap gap-x-10 items-center justify-center">
+            {officers.map((officer, index) => (
+              <OfficerCard
+                key={index}
+                name={officer.name}
+                position={officer.position}
+                photo={officer.pfp}
+                linkedin={officer.linkedin}
+              />
+            ))}
+          </div>
+        </div>
+      </div>
     </div>
   );
 };
