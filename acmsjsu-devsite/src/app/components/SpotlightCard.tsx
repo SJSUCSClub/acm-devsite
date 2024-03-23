@@ -1,14 +1,22 @@
 import Link from "next/link";
-
-const SpotLightCard = ({ href, image, title, description, ctaText }) => {
+import Image from "next/image"
+const SpotLightCard = ({type, image, title, id, description}) => {
   return (
-    <div className="bg-white rounded-lg shadow-lg p-6">
-      <img src={image} alt={title} className="w-full mb-4 rounded-lg" />
-      <h2 className="text-2xl font-medium mb-2">{title}</h2>
-      <p className="text-gray-700">{description}</p>
-      <Link className="bg-gray-800 text-white py-2 px-4 rounded-lg hover:bg-gray-700 block mt-4" href={href}>
-          {ctaText}
-      </Link>
+    <div className="flex-none p-5 grid grid-cols-2 place-items-center gap-5 bg-white rounded-lg shadow-lg transition ease-in-out hover:shadow-xl ">
+     <div className= "flex justify-center items-center h-[200px] w-[300px] bg-red-100">
+
+        <img src={image} alt={title} className="h-[200px] w-[300px] rounded-lg" />
+     </div>
+     <div className= "flex-shrink w-[300px] h-[200px] text-balance self-start text-left">
+       
+        <h1 className="font-bold text-xs pb-1 text-gray-500">{type}</h1> 
+        <h1 className="font-bold text-m pb-3">{title}</h1> 
+        <h3 className="text-wrap text-sm pb-3 ">
+          {description}
+          </h3>
+              
+     </div>
+    
     </div>
   );
 };

@@ -1,23 +1,61 @@
+"use client"
 import Image from "next/image";
-import Hero from "./components/Hero";
+import Hero from "./Hero";
+import FAQ from "./components/FAQ";
 import TestimonialCard from "./components/TestimonialCard";
 import SpotLightCard from "./components/SpotlightCard";
 import GetInvolved from "./components/ButtonGetInvolved";
 import GetInvolvedCard from "./components/GetInvolvedCard";
-import FAQ from "./components/FAQ";
+import ACMCSHero from "acm-cs-sjsu-hero-component";
+import "acm-cs-sjsu-hero-component/dist/styles.css";
+import { inherits } from "util";
+import Link from "next/link";
+import { useState } from "react";
 
-const spotlightCloudHero = {
-  type: "EVENT",
-  title: "Google Cloud Hero 2023",
-  description:
-    "Cloud Hero gets a room full of people competing head-to-head, with a live play-by-play leaderboard and lots of prizes. To date, over 1,000 players have played Cloud Hero at 12 public events like Google Cloud Next and Google Cloud Summits—with more venues on the way!",
-};
-const spotlightRestAPI = {
-  type: "PAST WORKSHOP",
-  title: "REST API Tutorial",
-  description:
-    "Learn how to create and implement REST API’s into your programs.",
-};
+
+const spotlights: ISpotlight[] = [
+  {
+    type: "TECH TALK",
+    image: "./placeholders/googlecloud.png",
+    title: "ACM x Tesla Tech Talk",
+    description:
+      "Guest speaker Phuc Ngo, an NLP and Senior Data Engineer at Tesla, talks about his experiences and journey in the industry.",
+    key: 1
+  }, 
+  {
+    type: "EVENT",
+    image: "./photos/events/googlealumni.jpg",
+    title: "Fall 2023 Google Alumni Panel",
+    description: "ACM hosted a Q&A panel with SJSU alumni who are now working at Google. Members had the opportunity to gain insight into the technical interview process and what a typical workday at Google looks like, as well as network with panelists.",
+    key: 2
+  },
+  
+  {
+    type: "EVENT",
+    image: "./placeholders/googlecloud.png",
+    title: "Google Cloud Hero 2023",
+    description: "Cloud Hero gets a room full of people competing head-to-head, with a live play-by-play leaderboard and lots of prizes. To date, over 1,000 players have played Cloud Hero at 12 public events like Google Cloud Next and Google Cloud Summits—with more venues on the way!",
+    key: 3
+  }, 
+  
+  
+  
+
+]
+
+
+
+interface ISpotlight {
+    type: string;
+    image: string; 
+    title: string; 
+    description: string; 
+    key: number
+ 
+  
+}
+
+
 
 const testimonial1 = {
   text: '"The hands-on experience I gained from the club\'s workshops has been invaluable for my software development skills."',
@@ -64,7 +102,7 @@ const semesterPlan = {
   ],
   buttonText: "Choose This Plan > ",
   buttonStyling:
-    "rounded-full bg-yellow-500 hover:bg-yellow-600 hover:text-yellow-700 no-underline text-white font-bold py-3 px-6 cursor-pointer",
+    "rounded-full bg-yellow-500 hover:bg-yellow-600 no-underline text-white font-bold py-3 px-6 cursor-pointer",
 };
 
 const annualPlan = {
@@ -78,73 +116,19 @@ const annualPlan = {
   ],
   buttonText: "Choose This Plan > ",
   buttonStyling:
-    "rounded-full bg-blue-500 hover:bg-blue-600 hover:text-blue-700 no-underline text-white font-bold py-3 px-6 cursor-pointer",
+    "rounded-full bg-[#1a6096] hover:bg-[#0c4e7e] no-underline text-white font-bold py-3 px-6 cursor-pointer",
 };
 
 export default function Home() {
+ 
+ 
   return (
-    <>
-      <main className="flex min-h-screen flex-col items-center justify-between p-24 ">
-        <GetInvolved />
-        <div className="w-3/4 h-px bg-black my-20"></div>
-        <h1 className="!mt-10 text-4xl font-bold">Testimonials</h1>
-        <h2 className="text-1xl font-bold mb-2 pt-3 text-gray-500">
-          From our dedicated members and supportive alumni.
-        </h2>
-        <div className="p-50 grid grid-cols-1 sm:grid-cols-3 gap-8 flex justify-between pt-10">
-          <TestimonialCard
-            text={testimonial1.text}
-            name={testimonial1.name}
-            job={testimonial1.job}
-          />
-          <TestimonialCard
-            text={testimonial2.text}
-            name={testimonial2.name}
-            job={testimonial2.job}
-          />
-          <TestimonialCard
-            text={testimonial3.text}
-            name={testimonial3.name}
-            job={testimonial3.job}
-          />
-        </div>
-        <h1 className="!mt-10 text-4xl font-bold pt-10">Get Involved</h1>
-        <h2 className="text-1xl font-bold mb-2 pt-3 text-gray-500">
-          Become a member and take advantage of member perks today!
-        </h2>
-        <div className="p-50 grid grid-cols-1 sm:grid-cols-3 gap-8 flex justify-between pt-10">
-          <GetInvolvedCard
-            plan={freePlan.plan}
-            price={freePlan.price}
-            description={freePlan.description}
-            priceStyling={freePlan.priceStyling}
-            textList={freePlan.textList}
-            buttonText={freePlan.buttonText}
-            buttonStyling={freePlan.buttonStyling}
-          />
-          <GetInvolvedCard
-            plan={semesterPlan.plan}
-            price={semesterPlan.price}
-            description={semesterPlan.description}
-            priceStyling={semesterPlan.priceStyling}
-            textList={semesterPlan.textList}
-            buttonText={semesterPlan.buttonText}
-            buttonStyling={semesterPlan.buttonStyling}
-          />
-          <GetInvolvedCard
-            plan={annualPlan.plan}
-            price={annualPlan.price}
-            description={annualPlan.description}
-            priceStyling={annualPlan.priceStyling}
-            textList={annualPlan.textList}
-            buttonText={annualPlan.buttonText}
-            buttonStyling={annualPlan.buttonStyling}
-          />
-        </div>
-      </main>
+    <main className="flex justify-center place-items-center">
+      <Hero/>
       <div className="relative bg-black w-full h-[650px]">
         <FAQ />
       </div>
-    </>
+    </main>
+    
   );
 }
