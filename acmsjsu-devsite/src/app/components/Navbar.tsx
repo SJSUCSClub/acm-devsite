@@ -15,7 +15,7 @@ const Navbar = () => {
       <div className="flex gap-4 items-center justify-center">
         
         <LinkCard path="/about" pathName="About Us" />
-        <LinkCard path="/events" pathName="Events" />
+        <LinkCard path="/eventspage" pathName="Events" />
         <LinkCard path="/workshops" pathName="Projects"/>
         <LinkCard path="/blog" pathName="Contact"/>
          
