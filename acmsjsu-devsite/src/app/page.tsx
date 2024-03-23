@@ -125,10 +125,9 @@ export default function Home() {
   return (
     <main className="flex justify-center place-items-center">
       <Hero/>
-      <div className="relative bg-black w-full h-[650px]">
-        <FAQ />
-      </div>
+    
     </main>
+    
     
   );
 }

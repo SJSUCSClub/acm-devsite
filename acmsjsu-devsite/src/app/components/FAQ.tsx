@@ -37,6 +37,9 @@ const FAQ = () => {
   };
   return (
     <>
+      <div className="footer bg-black w-full h-[600px]">
+       
+     
       <div className="text-white text-5xl flex justify-center font-bold">
         <div className="mt-16">
           <h1>Questions? We Got Answers. </h1>
@@ -78,6 +81,7 @@ const FAQ = () => {
             </div>
           ))}
         </div>
+      </div>
       </div>
     </>
   );
