@@ -2,6 +2,15 @@ import OfficerCard from "../components/about/OfficerCard";
 import TextWithImage from "../components/about/TextWithImage";
 import MemberButton from "../components/buttons/MemberButton";
 
+const developers = [
+  {
+    pfp: "",
+    name: "Test",
+    position: null,
+    linkedin: "",
+  },
+];
+
 const officers = [
   {
     pfp: "/pfps/Karthik.png",
@@ -201,12 +210,12 @@ const page = () => {
       </div>
 
       <hr className="border-neutral my-10"></hr>
-      <div className="officers space-y-6">
+      <div className="officers">
         <h1 className="text-4xl text-center font-bold">Officers</h1>
-        <h2 className="text-neutral text-xl text-center font-bold">
+        <h2 className="text-neutral text-xl text-center font-bold mt-4 mb-8">
           The crew behind the ship.
         </h2>
-        <div className="flex flex-col items-center justify-center gap-16 sm:gap-8 max-w-[1280px] mb-24">
+        <div className="flex flex-col items-center justify-center gap-16 sm:gap-8 mx-[-10%]">
           <div className="sm:flex sm:flex-wrap gap-x-10 items-center justify-center">
             {officers.map((officer, index) => (
               <OfficerCard
@@ -215,6 +224,24 @@ const page = () => {
                 position={officer.position}
                 photo={officer.pfp}
                 linkedin={officer.linkedin}
+              />
+            ))}
+          </div>
+        </div>
+      </div>
+      <div className="devteam">
+        <h1 className="text-4xl text-center font-bold my-8">
+          Development Team
+        </h1>
+        <div className="flex flex-col items-center justify-center gap-16 sm:gap-8 mx-[-10%]">
+          <div className="sm:flex sm:flex-wrap gap-x-10 items-center justify-center">
+            {developers.map((developer, index) => (
+              <OfficerCard
+                key={index}
+                name={developer.name}
+                position={developer.position}
+                photo={developer.pfp}
+                linkedin={developer.linkedin}
               />
             ))}
           </div>

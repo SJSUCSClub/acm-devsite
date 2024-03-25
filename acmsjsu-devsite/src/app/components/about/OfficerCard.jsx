@@ -11,9 +11,11 @@ const OfficerCard = ({ photo, name, position, linkedin }) => {
         height={1440}
         className="object-cover items-center justify-center h-60 w-60 m-7 rounded-2xl drop-shadow-lg"
       />
-      <h1 className="font-semibold gap-2 px-7 ">
-        <span className="text-xs text-neutral">{position}</span>{" "}
-      </h1>
+      {position && (
+        <h1 className="font-semibold gap-2 px-7 ">
+          <span className="text-xs text-neutral">{position}</span>{" "}
+        </h1>
+      )}
       <h1 className="font-bold text-lg px-7">{name}</h1>
 
       <div className="flex justify-start items-center w-full px-7 py-5">
