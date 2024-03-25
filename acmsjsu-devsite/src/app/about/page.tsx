@@ -63,7 +63,7 @@ const officers = [
 
 const page = () => {
   return (
-    <div className="about text-text my-20 px-[15%]">
+    <div className="about text-text my-10 px-[15%]">
       <div className="intro space-y-4">
         <h1 className="text-4xl font-bold">
           What is <span className="text-primary">ACM</span> at{" "}

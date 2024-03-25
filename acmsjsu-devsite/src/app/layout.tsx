@@ -8,8 +8,8 @@ const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "ACM@SJSU",
-  description: "MacQuarrie Hall 227. Empowering SJSU'S Computer Science community. By students, for students",
-
+  description:
+    "MacQuarrie Hall 227. Empowering SJSU'S Computer Science community. By students, for students",
 };
 
 export default function RootLayout({
@@ -20,15 +20,11 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
-       <Navbars/>
-       {children}
-       
-          <div className="">
-            <FAQ/>
-          </div>
-          <Footer />
-        
-        </body>
+        <Navbars />
+        {children}
+        <FAQ />
+        <Footer />
+      </body>
     </html>
   );
 }
