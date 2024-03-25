@@ -1,4 +1,4 @@
-"use client"
+"use client";
 import Image from "next/image";
 import Hero from "./Hero";
 import FAQ from "./components/FAQ";
@@ -12,7 +12,6 @@ import { inherits } from "util";
 import Link from "next/link";
 import { useState } from "react";
 
-
 const spotlights: ISpotlight[] = [
   {
     type: "TECH TALK",
@@ -20,42 +19,34 @@ const spotlights: ISpotlight[] = [
     title: "ACM x Tesla Tech Talk",
     description:
       "Guest speaker Phuc Ngo, an NLP and Senior Data Engineer at Tesla, talks about his experiences and journey in the industry.",
-    key: 1
-  }, 
+    key: 1,
+  },
   {
     type: "EVENT",
     image: "./photos/events/googlealumni.jpg",
     title: "Fall 2023 Google Alumni Panel",
-    description: "ACM hosted a Q&A panel with SJSU alumni who are now working at Google. Members had the opportunity to gain insight into the technical interview process and what a typical workday at Google looks like, as well as network with panelists.",
-    key: 2
+    description:
+      "ACM hosted a Q&A panel with SJSU alumni who are now working at Google. Members had the opportunity to gain insight into the technical interview process and what a typical workday at Google looks like, as well as network with panelists.",
+    key: 2,
   },
-  
+
   {
     type: "EVENT",
     image: "./placeholders/googlecloud.png",
     title: "Google Cloud Hero 2023",
-    description: "Cloud Hero gets a room full of people competing head-to-head, with a live play-by-play leaderboard and lots of prizes. To date, over 1,000 players have played Cloud Hero at 12 public events like Google Cloud Next and Google Cloud Summits—with more venues on the way!",
-    key: 3
-  }, 
-  
-  
-  
-
-]
-
-
+    description:
+      "Cloud Hero gets a room full of people competing head-to-head, with a live play-by-play leaderboard and lots of prizes. To date, over 1,000 players have played Cloud Hero at 12 public events like Google Cloud Next and Google Cloud Summits—with more venues on the way!",
+    key: 3,
+  },
+];
 
 interface ISpotlight {
-    type: string;
-    image: string; 
-    title: string; 
-    description: string; 
-    key: number
- 
-  
+  type: string;
+  image: string;
+  title: string;
+  description: string;
+  key: number;
 }
-
-
 
 const testimonial1 = {
   text: '"The hands-on experience I gained from the club\'s workshops has been invaluable for my software development skills."',
@@ -120,14 +111,12 @@ const annualPlan = {
 };
 
 export default function Home() {
- 
- 
   return (
-    <main className="flex justify-center place-items-center">
-      <Hero/>
-    
-    </main>
-    
-    
+    <>
+      <main className="flex justify-center place-items-center">
+        <Hero />
+      </main>
+      <FAQ />
+    </>
   );
 }

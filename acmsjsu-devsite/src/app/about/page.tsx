@@ -1,7 +1,6 @@
-import Image from "next/image";
 import OfficerCard from "../components/about/OfficerCard";
 import TextWithImage from "../components/about/TextWithImage";
-import RightArrow from "/public/about/rightarrow.svg";
+import MemberButton from "../components/buttons/MemberButton";
 
 const officers = [
   {
@@ -197,16 +196,7 @@ const page = () => {
         </TextWithImage>
 
         <div className="flex gap-4 items-center justify-center">
-          <button className="bg-primary py-2 px-4 rounded-full border border-border hover:border-border-hovered">
-            <a
-              href="https://forms.gle/aXjuoZ2e7TVVRJKT8"
-              target="_blank"
-              className="flex gap-3 no-underline font-bold"
-            >
-              <span className="text-white"> Become A Member </span>
-              <Image src={RightArrow} alt="right arrow" />
-            </a>
-          </button>
+          <MemberButton />
         </div>
       </div>
 
