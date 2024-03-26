@@ -35,7 +35,7 @@ const Footer = () => {
         >
           <img
             className="sm:w-8"
-            src="./Linkedin.png"
+            src="/icons/Instagram.svg"
             alt="linkedin image"
           />
         </a>
