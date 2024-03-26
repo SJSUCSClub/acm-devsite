@@ -10,7 +10,7 @@ import { useState } from "react";
 const spotlights: ISpotlight[] = [
     {
       type: "TECH TALK",
-      image: "./placeholders/googlecloud.png",
+      image: "./photos/events/teslatalk.png",
       title: "ACM x Tesla Tech Talk",
       description:
         "Guest speaker Phuc Ngo, an NLP and Senior Data Engineer at Tesla, talks about his experiences and journey in the industry.",
@@ -18,7 +18,7 @@ const spotlights: ISpotlight[] = [
     }, 
     {
       type: "EVENT",
-      image: "./photos/events/googlealumni.jpg",
+      image: "./photos/events/googlealumni.png",
       title: "Fall 2023 Google Alumni Panel",
       description: "ACM hosted a Q&A panel with SJSU alumni who are now working at Google. Members had the opportunity to gain insight into the technical interview process and what a typical workday at Google looks like, as well as network with panelists.",
       id: 2
@@ -26,7 +26,7 @@ const spotlights: ISpotlight[] = [
     
     {
       type: "EVENT",
-      image: "./placeholders/googlecloud.png",
+      image: "./photos/events/googlecloudhero.png",
       title: "Google Cloud Hero 2023",
       description: "Cloud Hero gets a room full of people competing head-to-head, with a live play-by-play leaderboard and lots of prizes. To date, over 1,000 players have played Cloud Hero at 12 public events like Google Cloud Next and Google Cloud Summits—with more venues on the way!",
       id: 3
@@ -144,7 +144,7 @@ const Hero = () => {
         
 
     
-            <Link  className="transition font-bold ease-in-out hover:text-white hover:scale-110 shadow-md flex text-md border-[#ecd79c] border-2 rounded-3xl py-2 px-4 bg-[#f3c954] text-white transform -translate-y-24" target="_blank" href = "">
+            <Link  className="transition font-bold ease-in-out hover:text-white hover:scale-110 shadow-md flex text-md border-[#ecd79c] border-2 rounded-3xl py-2 px-4 bg-[#f3c954] text-white transform -translate-y-24" target="_blank" href = "https://docs.google.com/forms/d/e/1FAIpQLSf1KNg9T5sPAM9EtOm3i_bQctlq81b7QIns1uNkWtlSCpzOvg/viewform">
                     Become a Member
                     <Image className="pl-2" src="./icons/right-chevron.svg" width={22} height={22} alt={""}/>
             </Link>
@@ -167,7 +167,7 @@ const Hero = () => {
         <div className="py-4 text-base font-normal"> Engage with other ACM at SJSU members and elevate your tech journey. Access valuable resources like mock interviews for interview prep, thrilling hackathons, and coding competitions. Connect with industry leaders like Apple, Tesla, and <b>Google</b> for exclusive networking opportunities. 
         </div>
             
-            <Link className="flex text-[#1a6096] pb-14" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">
+            <Link className="flex text-[#1a6096] pb-14" href="https://docs.google.com/forms/d/e/1FAIpQLSf1KNg9T5sPAM9EtOm3i_bQctlq81b7QIns1uNkWtlSCpzOvg/viewform">
             Become a member {">"}
             </Link>
         </div>
@@ -213,6 +213,7 @@ const Hero = () => {
             {card.map(event => {
                 return (
                 <SpotLightCard type={event.type} image={event.image} title={event.title} description={event.description} key={event.id} id={undefined} />
+                
                 )
             })}
 

@@ -11,7 +11,7 @@ const GetInvolvedCard = ({ plan, price, description, priceStyling, textList, but
           <li key={index}> {text}</li>
         ))}
       </ul>
-      <button className={`${buttonStyling} mt-10`}>{buttonText}</button>
+      <button className={`${buttonStyling} mt-10`}>{buttonText}</button> 
     </div>
   );
 };
