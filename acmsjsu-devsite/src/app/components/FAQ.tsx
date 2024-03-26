@@ -28,7 +28,7 @@ const FAQ = () => {
 
   const [expandedIndex, setExpandedIndex] = useState(-1);
 
-  const handleQuestionClick = (index: SetStateAction<number>) => {
+  const handleQuestionClick = (index: any) => {
     if (index === expandedIndex) {
       setExpandedIndex(-1);
     } else {

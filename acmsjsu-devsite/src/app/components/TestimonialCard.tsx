@@ -1,6 +1,6 @@
 import React from "react";
 
-const TestimonialCard = ({ text, name, job }) => {
+const TestimonialCard = ({ text, name, job }: any) => {
   return (
     <div className="bg-white rounded-xl shadow-xl p-6 pt-20 pb-20">
       <h2 className="italic text-1xl font-small mb-2">{text}</h2>

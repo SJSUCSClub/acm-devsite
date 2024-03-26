@@ -1,6 +1,6 @@
 import React from 'react'
 
-const LinkToButton = ({url, text}) => {
+const LinkToButton = ({url, text}: any) => {
   return (
     <div>
       <a href={url}
