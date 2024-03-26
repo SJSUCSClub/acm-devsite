@@ -8,7 +8,8 @@ const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "ACM@SJSU",
-  description: "",
+  description: "MacQuarrie Hall 227. Empowering SJSU'S Computer Science community. By students, for students",
+
 };
 
 export default function RootLayout({
