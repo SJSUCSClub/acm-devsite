@@ -4,10 +4,52 @@ import MemberButton from "../components/buttons/MemberButton";
 
 const developers = [
   {
-    pfp: "",
-    name: "Test",
+    pfp: "/pfps/anishka.png",
+    name: "Anishka Chauhan",
     position: null,
-    linkedin: "",
+    linkedin: "https://www.linkedin.com/in/anishka-chauhan/",
+  },
+  {
+    pfp: "/pfps/dylan.jpg",
+    name: "Dylan Huang",
+    position: null,
+    linkedin: "https://www.linkedin.com/in/huang-dylan/",
+  },
+  {
+    pfp: "/pfps/justin.jpg",
+    name: "Justin Lee",
+    position: null,
+    linkedin: "https://www.linkedin.com/in/justin-lee-a670531ab",
+  },
+  {
+    pfp: "/pfps/kevin.jpg",
+    name: "Kevin Tsoi",
+    position: null,
+    linkedin: "https://www.linkedin.com/in/kevin-tsoi/",
+  },
+  {
+    pfp: "/pfps/kiet.jpg",
+    name: "Kiet Quan",
+    position: null,
+    linkedin: "https://www.linkedin.com/in/kiet-quan-software-engineer/",
+  },
+  {
+    pfp: "/pfps/marvin.jpg",
+    name: "Marvin Zhai",
+    position: null,
+    linkedin: "https://www.linkedin.com/in/marvin-zhai-739144278/",
+  },
+  {
+    pfp: "/pfps/ronald.jpg",
+    name: "Ronald Li",
+    position: null,
+    linkedin: "https://www.linkedin.com/in/ronaldli666/",
+  },
+  {
+    pfp: "/pfps/agamjot.png",
+    name: "Agamjot Singh",
+    position: null,
+    linkedin: "www.linkedin.com/in/agamjotsingh05",
   },
 ];
 
