@@ -1,6 +1,6 @@
 import Link from "next/link";
 import Image from "next/image"
-const SpotLightCard = ({type, image, title, id, description}) => {
+const SpotLightCard = ({type, image, title, id, description}: any) => {
   return (
     <div className="flex-none p-5 grid grid-cols-2 place-items-center gap-5 bg-white rounded-lg shadow-lg transition ease-in-out hover:shadow-xl ">
      <div className= "flex justify-center items-center h-[200px] w-[300px] bg-red-100">
