@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { SetStateAction, useState } from "react";
 
 const FAQ = () => {
   const questions = [
@@ -28,7 +28,7 @@ const FAQ = () => {
 
   const [expandedIndex, setExpandedIndex] = useState(-1);
 
-  const handleQuestionClick = (index) => {
+  const handleQuestionClick = (index: any) => {
     if (index === expandedIndex) {
       setExpandedIndex(-1);
     } else {
