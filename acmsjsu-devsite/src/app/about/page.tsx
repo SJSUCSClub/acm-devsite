@@ -211,7 +211,7 @@ const page = () => {
         <TextWithImage
           reverse={true}
           logo={true}
-          imagePath="/about/software.png"
+          imagePath="/about/software.svg"
           imageAlt=""
         >
           <p>
@@ -222,7 +222,7 @@ const page = () => {
             technology stacks prevalent in the industry.
           </p>
         </TextWithImage>
-        <TextWithImage logo={true} imagePath="/about/hardware.png" imageAlt="">
+        <TextWithImage logo={true} imagePath="/about/hardware.svg" imageAlt="">
           <p>
             This team is committed to immersing students in the world of
             hardware by engaging them in tangible projects and experiments. We
@@ -234,7 +234,7 @@ const page = () => {
         <TextWithImage
           reverse={true}
           logo={true}
-          imagePath="/about/design.png"
+          imagePath="/about/design.svg"
           imageAlt=""
         >
           <p>
