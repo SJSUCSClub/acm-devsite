@@ -158,11 +158,13 @@ const page = () => {
           You can join any of our teams to explore your interests and develop
           new skills as a member of the club.
         </p>
+        <h1 className="pt-4 font-bold md:text-2xl text-lg text-center text-[#8F69C2]">Software</h1>
         <TextWithImage
           reverse={true}
           logo={true}
-          imagePath="/about/software.png"
+          imagePath="/icons/softwareicon.svg"
           imageAlt=""
+         
         >
           <p>
             This group is committed to providing students with the chance to
@@ -172,7 +174,9 @@ const page = () => {
             technology stacks prevalent in the industry.
           </p>
         </TextWithImage>
-        <TextWithImage logo={true} imagePath="/about/hardware.png" imageAlt="">
+
+        <h1 className="font-bold mt-2 md:text-2xl text-lg text-center text-[#C28F69]">Hardware</h1>
+        <TextWithImage logo={true} imagePath="/icons/hardwareicon.svg" imageAlt="">
           <p>
             This team is committed to immersing students in the world of
             hardware by engaging them in tangible projects and experiments. We
@@ -181,11 +185,13 @@ const page = () => {
             technological innovation in the industry.
           </p>
         </TextWithImage>
+        <h1 className="font-bold md:text-2xl text-lg text-center text-[#69C28F]">Design</h1>
         <TextWithImage
           reverse={true}
           logo={true}
-          imagePath="/about/design.png"
+          imagePath="/icons/designicon.svg"
           imageAlt=""
+         
         >
           <p>
             Our design squad is focused on guiding students through the creative

@@ -23,8 +23,8 @@ export default function RootLayout({
        <Navbars/>
        {children}
        
-          <div className="">
-            <FAQ/>
+          <div className="flex">
+          <FAQ/>
           </div>
           <Footer />
         
