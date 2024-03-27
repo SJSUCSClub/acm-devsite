@@ -198,7 +198,6 @@ const Hero = () => {
         </div>
         <GetInvolved />
       </div>
-{/*
       <h1 className="pt-16 text-4xl font-bold">Testimonials</h1>
       <h2 className="text-1xl font-bold pb-4 pt-3 text-gray-400">
         From our dedicated members and supportive alumni.
@@ -253,7 +252,7 @@ const Hero = () => {
           buttonStyling={annualPlan.buttonStyling}
         />
       </div>
-        */}
+        
     </div>
   );
 
