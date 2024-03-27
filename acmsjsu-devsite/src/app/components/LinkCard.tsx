@@ -6,7 +6,7 @@ const LinkCard = ({ path, pathName }: any) => {
     <div
       className={`px-4 py-2 no-underline hover:bg-[#eabc4e] transition duration-200 rounded-md`}
     >
-      <Link href={path} style={{ textDecoration: 'none',  color: '#196096'}}className={"text-sm font-semibold"}>
+      <Link href={path} style={{ textDecoration: 'none',  color: '#196096'}}className="text-sm font-semibold" >
         {pathName}
       </Link>
     </div>
