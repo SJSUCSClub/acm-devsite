@@ -18,14 +18,14 @@ const Navbar = () => {
   return (
     <div className="navbar z-10 sticky w-full">
       <div className="flex bg-white px-[5%] py-4 border-b-4 w-full">
-        <a href="/" className="mr-auto">
+        <Link href="/" className="mr-auto">
           <Image
             src={Logo}
             alt="Logo"
             quality={100}
             className="sm:h-auto max-w-[100px] h-auto"
           />
-        </a>
+        </Link>
 
         <div className="hidden md:flex grid grid-flow-col gap-4 items-center text-right justify-right">
           <LinkCard path="/about" pathName="About Us" />
@@ -63,13 +63,10 @@ const Navbar = () => {
         </div>
       </div>
       <div
-        className={`w-screen ${isOpen ? "absolute transition ease-in flex-row bg-white justify-center text-center items-center md:hidden" : "hidden"}`}
+        className={`w-screen ${isOpen ? "absolute transition ease-in flex-row bg-white justify-center text-center items-center md:hidden  border-b-4" : "hidden"}`}
+        onClick={handleClick}
       >
-        <LinkCard
-          path="/about"
-          pathName="
-                                            Us"
-        />
+        <LinkCard path="/about" pathName="About Us" />
         <LinkCard path="/events" pathName="Events" />
       </div>
     </div>

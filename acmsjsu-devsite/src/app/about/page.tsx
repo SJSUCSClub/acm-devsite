@@ -16,7 +16,7 @@ const developers = [
     linkedin: "https://www.linkedin.com/in/huang-dylan/",
   },
   {
-    pfp: "/pfps/justin.jpg",
+    pfp: "/pfps/justin.JPG",
     name: "Justin Lee",
     position: null,
     linkedin: "https://www.linkedin.com/in/justin-lee-a670531ab",
