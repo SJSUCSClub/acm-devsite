@@ -32,7 +32,7 @@ const Navbar = () => {
           <LinkCard path="/events" pathName="Events" />
         </div>
 
-        <div className="md:hidden place-content-center">
+        <div className="md:hidden place-content-center items-center">
           <button
             onClick={handleClick}
             className="flex flex-col justify-center items-center"
