@@ -109,31 +109,31 @@ const annualPlan = {
 const Hero = () => {
   const [card, setSpotlightPast] = useState(spotlights)
   return (
-    <div className="text-center min-w-full flex-col items-center justify-between pt-10 pb-20 px-32">
+    <div className="text-center min-w-full flex-col items-center justify-between pt-10 pb-20 px-[5%]">
       <div className="min-h-screen">
-        <div className="flex place-content-center min-w-full ">
+        <div className="flex place-content-center md:scale-100">
           <ACMCSHero />
         </div>
 
-        <div className="animate-[fadeIn_2s_ease-in-out] duration-300 flex items-center place-content-center gap-5">
-          <Link style={{}} className="font-semibold transition ease-in-out hover:text-white hover:scale-110 shadow-md flex text-md border-[#b4c9d9] border-2 rounded-3xl py-2 px-4 bg-[#87adcd] text-[#c1d6e6]  transform -translate-y-24" target="_blank" href="https://discord.gg/Rw85ngkExu">
-            <Image className="dark:invert pr-2" src="./icons/discord.svg" width={25} height={25} alt={""} />
+        <div className="animate-[fadeIn_2s_ease-in-out] md:text-lg text-[3vw] text-center transform md:-translate-y-24 pb-3 duration-300 flex-cols md:flex items-center place-content-center gap-5">
+          <Link style={{}} className="justify-center relative font-semibold transition ease-in-out hover:text-white hover:scale-110 shadow-md flex  border-[#b4c9d9] border-2 rounded-3xl py-2 px-4 bg-[#87adcd] text-[#c1d6e6]" target="_blank" href="https://discord.gg/Rw85ngkExu">
+            <Image className="dark:invert pr-[2%] md:pr-[5%] w-[5vw] md:w-[30%] h-auto" src="./icons/discord.svg" width={0} height={0} alt={""} />
             Discord
           </Link>
 
-          <Link className="font-semibold transition ease-in-out hover:text-white hover:scale-110 shadow-md flex text-md border-[#b4c9d9] border-2 rounded-3xl py-2 px-4 bg-[#87adcd] text-[#c1d6e6]  transform -translate-y-24" target="_blank" href="https://www.instagram.com/sjsuacm/">
-            <Image className="dark:invert pr-2" src="./icons/Instagram.svg" width={25} height={25} alt={""} />
+          <Link className="justify-center relative font-semibold transition ease-in-out hover:text-white hover:scale-110 shadow-md flex border-[#b4c9d9] border-2 rounded-3xl py-2 px-4 bg-[#87adcd] text-[#c1d6e6] " target="_blank" href="https://www.instagram.com/sjsuacm/">
+            <Image className="dark:invert pr-[2%] md:pr-[5%] w-[5vw] md:w-[25%] h-auto" src="./icons/Instagram.svg" width={0} height={0} alt={""} />
             Instagram
           </Link>
 
-          <Link className="font-semibold transition ease-in-out hover:text-white hover:scale-110 shadow-md flex text-md border-[#b4c9d9] border-2 rounded-3xl py-2 px-4 bg-[#87adcd] text-[#c1d6e6] transform -translate-y-24" target="_blank" href="https://www.linkedin.com/company/sjsu-computer-science-club/about/">
-            <Image className="dark:invert pr-2" src="./icons/LinkedIn.svg" width={25} height={25} alt={""} />
+          <Link className="justify-center relative font-semibold transition ease-in-out hover:text-white hover:scale-110 shadow-md flex  border-[#b4c9d9] border-2 rounded-3xl py-2 px-4 bg-[#87adcd] text-[#c1d6e6]" target="_blank" href="https://www.linkedin.com/company/sjsu-computer-science-club/about/">
+            <Image className="dark:invert pr-[2%] md:pr-[5%] w-[5vw] md:w-[25%] h-auto" src="./icons/logo2.svg" width={0} height={0} alt={""} />
             Linkedin
           </Link>
 
-          <Link className="transition font-bold ease-in-out hover:text-white hover:scale-110 shadow-md flex text-md border-[#ecd79c] border-2 rounded-3xl py-2 px-4 bg-[#f3c954] text-white transform -translate-y-24" target="_blank" href="">
+          <Link className="justify-center relative transition font-bold ease-in-out hover:text-white hover:scale-110 shadow-md flex  border-[#ecd79c] border-2 rounded-3xl py-2 px-4 bg-[#f3c954] text-white" target="_blank" href="https://docs.google.com/forms/d/e/1FAIpQLSf1KNg9T5sPAM9EtOm3i_bQctlq81b7QIns1uNkWtlSCpzOvg/viewform">
             Become a Member
-            <Image className="pl-2" src="./icons/right-chevron.svg" width={22} height={22} alt={""} />
+            <Image className="pl-[2%] w-[4vw] md:w-[22px] h-auto" src="./icons/right-chevron.svg" width={0} height={0} alt={""} />
           </Link>
         </div>
 
@@ -149,7 +149,7 @@ const Hero = () => {
           <div className="py-4 text-base font-normal"> Engage with other ACM at SJSU members and elevate your tech journey. Access valuable resources like mock interviews for interview prep, thrilling hackathons, and coding competitions. Connect with industry leaders like Apple, Tesla, and <b>Google</b> for exclusive networking opportunities.
           </div>
 
-          <Link className="flex text-[#1a6096] pb-14" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">
+          <Link className="flex text-[#1a6096] pb-14" target="_blank" href="https://docs.google.com/forms/d/e/1FAIpQLSf1KNg9T5sPAM9EtOm3i_bQctlq81b7QIns1uNkWtlSCpzOvg/viewform">
             Become a member {">"}
           </Link>
         </div>
@@ -198,7 +198,6 @@ const Hero = () => {
         </div>
         <GetInvolved />
       </div>
-
       <h1 className="pt-16 text-4xl font-bold">Testimonials</h1>
       <h2 className="text-1xl font-bold pb-4 pt-3 text-gray-400">
         From our dedicated members and supportive alumni.
@@ -253,6 +252,7 @@ const Hero = () => {
           buttonStyling={annualPlan.buttonStyling}
         />
       </div>
+        
     </div>
   );
 
