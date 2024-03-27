@@ -1,7 +1,57 @@
-import Image from "next/image";
 import OfficerCard from "../components/about/OfficerCard";
 import TextWithImage from "../components/about/TextWithImage";
-import RightArrow from "/public/about/rightarrow.svg";
+import MemberButton from "../components/buttons/MemberButton";
+
+const developers = [
+  {
+    pfp: "/pfps/anishka.png",
+    name: "Anishka Chauhan",
+    position: null,
+    linkedin: "https://www.linkedin.com/in/anishka-chauhan/",
+  },
+  {
+    pfp: "/pfps/dylan.jpg",
+    name: "Dylan Huang",
+    position: null,
+    linkedin: "https://www.linkedin.com/in/huang-dylan/",
+  },
+  {
+    pfp: "/pfps/justin.jpg",
+    name: "Justin Lee",
+    position: null,
+    linkedin: "https://www.linkedin.com/in/justin-lee-a670531ab",
+  },
+  {
+    pfp: "/pfps/kevin.jpg",
+    name: "Kevin Tsoi",
+    position: null,
+    linkedin: "https://www.linkedin.com/in/kevin-tsoi/",
+  },
+  {
+    pfp: "/pfps/kiet.jpg",
+    name: "Kiet Quan",
+    position: null,
+    linkedin: "https://www.linkedin.com/in/kiet-quan-software-engineer/",
+  },
+  {
+    pfp: "/pfps/marvin.jpg",
+    name: "Marvin Zhai",
+    position: null,
+    linkedin: "https://www.linkedin.com/in/marvin-zhai-739144278/",
+  },
+  {
+    pfp: "/pfps/ronald.jpg",
+    name: "Ronald Li",
+    position: null,
+    linkedin: "https://www.linkedin.com/in/ronaldli666/",
+  },
+  {
+    pfp: "/pfps/agamjot.png",
+    name: "Agamjot Singh",
+    position: null,
+    linkedin: "www.linkedin.com/in/agamjotsingh05",
+  },
+];
 
 const officers = [
   {
@@ -63,7 +113,7 @@ const officers = [
 
 const page = () => {
   return (
-    <div className="about text-text my-20 px-[15%]">
+    <div className="about text-text my-10 px-[15%]">
       <div className="intro space-y-4">
         <h1 className="text-4xl font-bold">
           What is <span className="text-primary">ACM</span> at{" "}
@@ -161,7 +211,7 @@ const page = () => {
         <TextWithImage
           reverse={true}
           logo={true}
-          imagePath="/about/software.png"
+          imagePath="/about/software.svg"
           imageAlt=""
         >
           <p>
@@ -172,7 +222,7 @@ const page = () => {
             technology stacks prevalent in the industry.
           </p>
         </TextWithImage>
-        <TextWithImage logo={true} imagePath="/about/hardware.png" imageAlt="">
+        <TextWithImage logo={true} imagePath="/about/hardware.svg" imageAlt="">
           <p>
             This team is committed to immersing students in the world of
             hardware by engaging them in tangible projects and experiments. We
@@ -184,7 +234,7 @@ const page = () => {
         <TextWithImage
           reverse={true}
           logo={true}
-          imagePath="/about/design.png"
+          imagePath="/about/design.svg"
           imageAlt=""
         >
           <p>
@@ -197,26 +247,17 @@ const page = () => {
         </TextWithImage>
 
         <div className="flex gap-4 items-center justify-center">
-          <button className="bg-primary py-2 px-4 rounded-full border border-border hover:border-border-hovered">
-            <a
-              href="https://forms.gle/aXjuoZ2e7TVVRJKT8"
-              target="_blank"
-              className="flex gap-3 no-underline font-bold"
-            >
-              <span className="text-white"> Become A Member </span>
-              <Image src={RightArrow} alt="right arrow" />
-            </a>
-          </button>
+          <MemberButton />
         </div>
       </div>
 
       <hr className="border-neutral my-10"></hr>
-      <div className="officers space-y-6">
+      <div className="officers">
         <h1 className="text-4xl text-center font-bold">Officers</h1>
-        <h2 className="text-neutral text-xl text-center font-bold">
+        <h2 className="text-neutral text-xl text-center font-bold mt-4 mb-8">
           The crew behind the ship.
         </h2>
-        <div className="flex flex-col items-center justify-center gap-16 sm:gap-8 max-w-[1280px] mb-24">
+        <div className="flex flex-col items-center justify-center gap-16 sm:gap-8 mx-[-10%]">
           <div className="sm:flex sm:flex-wrap gap-x-10 items-center justify-center">
             {officers.map((officer, index) => (
               <OfficerCard
@@ -225,6 +266,24 @@ const page = () => {
                 position={officer.position}
                 photo={officer.pfp}
                 linkedin={officer.linkedin}
+              />
+            ))}
+          </div>
+        </div>
+      </div>
+      <div className="devteam">
+        <h1 className="text-4xl text-center font-bold my-8">
+          Development Team
+        </h1>
+        <div className="flex flex-col items-center justify-center gap-16 sm:gap-8 mx-[-10%]">
+          <div className="sm:flex sm:flex-wrap gap-x-10 items-center justify-center">
+            {developers.map((developer, index) => (
+              <OfficerCard
+                key={index}
+                name={developer.name}
+                position={developer.position}
+                photo={developer.pfp}
+                linkedin={developer.linkedin}
               />
             ))}
           </div>
