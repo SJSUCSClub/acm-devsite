@@ -8,106 +8,32 @@ import Image from "next/image"
 import { useState } from "react";
 
 const spotlights: ISpotlight[] = [
-    {
-      type: "TECH TALK",
-      image: "./photos/events/teslatalk.png",
-      title: "ACM x Tesla Tech Talk",
-      description:
-        "Guest speaker Phuc Ngo, an NLP and Senior Data Engineer at Tesla, talks about his experiences and journey in the industry.",
-      id: 1
-    }, 
-    {
-      type: "EVENT",
-      image: "./photos/events/googlealumni.png",
-      title: "Fall 2023 Google Alumni Panel",
-      description: "ACM hosted a Q&A panel with SJSU alumni who are now working at Google. Members had the opportunity to gain insight into the technical interview process and what a typical workday at Google looks like, as well as network with panelists.",
-      id: 2
-    },
-    
-    {
-      type: "EVENT",
-      image: "./photos/events/googlecloudhero.png",
-      title: "Google Cloud Hero 2023",
-      description: "Cloud Hero gets a room full of people competing head-to-head, with a live play-by-play leaderboard and lots of prizes. To date, over 1,000 players have played Cloud Hero at 12 public events like Google Cloud Next and Google Cloud Summits—with more venues on the way!",
-      id: 3
-    }, 
-  ]
-  
-  
-  
-  interface ISpotlight {
-      type: string;
-      image: string; 
-      title: string; 
-      description: string; 
-      id: number
-   
-    
-  }
-  
-  
-  
-  const testimonial1 = {
-    text: '"The hands-on experience I gained from the club\'s workshops has been invaluable for my software development skills."',
-    name: "JOHNSON",
-    job: "Full Stack Developer at Shopify",
-  };
-  
-  const testimonial2 = {
-    text: '"I never knew how many opportunities were available in tech until I attended the club\'s career events. Truly eye-opening!"',
-    name: "SAMANTHA RUIZ",
-    job: "Data Analyst at Microsoft",
-  };
-  
-  const testimonial3 = {
-    text: '"The mentorship I\'ve received as a club member has really improved my coding skills but also my confidence in problem solving"',
-    name: "ELIJAH SMITH",
-    job: "Systems Engineer at IBM",
-  };
-  
-  const freePlan = {
-    plan: "Free Plan",
-    price: "$0.00",
-    description: "You can get involved without a free.",
-    priceStyling: "text-5xl font-bold text-gray-400",
-    textList: [
-      "Access to free events, workshops, hackathons, and coding competitions",
-      "Networking opportunities with industry leaders and alumni.",
-    ],
-    buttonText: "Register",
-    buttonStyling:
-      "rounded-full bg-white-500 hover:bg-blue-500 hover:text-white border border-blue-500 no-underline text-blue-500 font-bold py-3 px-6 cursor-pointer",
-  };
-  
-  const semesterPlan = {
-    plan: "Semester Plan",
-    price: "$19.95/sem.",
-    description: "Take advantage of member perks today!",
-    priceStyling: "text-5xl font-bold text-yellow-500",
-    textList: [
-      "All benefits of the Free Membership.",
-      "Access to exclusive member-only events and workshops.",
-      "Priority registration for hackathons and coding competitions.",
-      "Complementary club merchandise.",
-    ],
-    buttonText: "Choose This Plan > ",
-    buttonStyling:
-      "rounded-full bg-yellow-500 hover:bg-yellow-600 no-underline text-white font-bold py-3 px-6 cursor-pointer",
-  };
-  
-  const annualPlan = {
-    plan: "Annual Plan",
-    price: "$29.95/yr.",
-    description: "Year-Round Advantages",
-    priceStyling: "text-5xl font-bold text-blue-500",
-    textList: [
-      "All benefits of the Semester Membership for a full year.",
-      "Additional savings over the semesterly rate.",
-    ],
-    buttonText: "Choose This Plan > ",
-    buttonStyling:
-      "rounded-full bg-[#1a6096] hover:bg-[#0c4e7e] no-underline text-white font-bold py-3 px-6 cursor-pointer",
-  };
+  {
+    type: "TECH TALK",
+    image: "./photos/events/teslatalk.png",
+    title: "ACM x Tesla Tech Talk",
+    description:
+      "Guest speaker Phuc Ngo, an NLP and Senior Data Engineer at Tesla, talks about his experiences and journey in the industry.",
+    id: 1
+  },
+  {
+    type: "EVENT",
+    image: "./photos/events/googlealumni.png",
+    title: "Fall 2023 Google Alumni Panel",
+    description: "ACM hosted a Q&A panel with SJSU alumni who are now working at Google. Members had the opportunity to gain insight into the technical interview process and what a typical workday at Google looks like, as well as network with panelists.",
+    id: 2
+  },
+
+  {
+    type: "EVENT",
+    image: "./photos/events/googlecloudhero.png",
+    title: "Google Cloud Hero 2023",
+    description: "Cloud Hero gets a room full of people competing head-to-head, with a live play-by-play leaderboard and lots of prizes. To date, over 1,000 players have played Cloud Hero at 12 public events like Google Cloud Next and Google Cloud Summits—with more venues on the way!",
+    id: 3
+  },
+]
+
+
 
 interface ISpotlight {
   type: string;
@@ -149,7 +75,7 @@ const freePlan = {
     "rounded-full bg-white-500 hover:bg-blue-500 hover:text-white border border-blue-500 no-underline text-blue-500 font-bold py-3 px-6 cursor-pointer",
 };
 
-    
+
 const semesterPlan = {
   plan: "Semester Plan",
   price: "$19.95/sem.",
@@ -187,7 +113,8 @@ const Hero = () => {
       <div className="min-h-screen">
         <div className="flex place-content-center min-w-full ">
           <ACMCSHero />
-  
+        </div>
+
         <div className="animate-[fadeIn_2s_ease-in-out] duration-300 flex items-center place-content-center gap-5">
           <Link style={{}} className="font-semibold transition ease-in-out hover:text-white hover:scale-110 shadow-md flex text-md border-[#b4c9d9] border-2 rounded-3xl py-2 px-4 bg-[#87adcd] text-[#c1d6e6]  transform -translate-y-24" target="_blank" href="https://discord.gg/Rw85ngkExu">
             <Image className="dark:invert pr-2" src="./icons/discord.svg" width={25} height={25} alt={""} />
@@ -331,4 +258,4 @@ const Hero = () => {
 
 }
 
-export default Hero;
+export default Hero
