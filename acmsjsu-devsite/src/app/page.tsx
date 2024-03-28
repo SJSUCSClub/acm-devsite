@@ -9,7 +9,7 @@ export default function Home() {
       <main className="flex justify-center place-items-center">
         <Hero />
       </main>
-      <FAQ />
+     
     </>
   );
 }
