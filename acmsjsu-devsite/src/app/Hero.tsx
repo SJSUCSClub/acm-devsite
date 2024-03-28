@@ -10,7 +10,7 @@ import { useState } from "react";
 const spotlights: ISpotlight[] = [
   {
     type: "TECH TALK",
-    image: "./photos/events/teslatalk.png",
+    image: "/photos/events/teslatalk.png",
     title: "ACM x Tesla Tech Talk",
     description:
       "Guest speaker Phuc Ngo, an NLP and Senior Data Engineer at Tesla, talks about his experiences and journey in the industry.",
@@ -18,7 +18,7 @@ const spotlights: ISpotlight[] = [
   },
   {
     type: "EVENT",
-    image: "./photos/events/googlealumni.png",
+    image: "/photos/events/googlealumni.png",
     title: "Fall 2023 Google Alumni Panel",
     description: "ACM hosted a Q&A panel with SJSU alumni who are now working at Google. Members had the opportunity to gain insight into the technical interview process and what a typical workday at Google looks like, as well as network with panelists.",
     id: 2
@@ -26,11 +26,13 @@ const spotlights: ISpotlight[] = [
 
   {
     type: "EVENT",
-    image: "./photos/events/googlecloudhero.png",
+    image: "/photos/events/googlecloudhero.png",
     title: "Google Cloud Hero 2023",
     description: "Cloud Hero gets a room full of people competing head-to-head, with a live play-by-play leaderboard and lots of prizes. To date, over 1,000 players have played Cloud Hero at 12 public events like Google Cloud Next and Google Cloud Summits—with more venues on the way!",
     id: 3
   },
+
+
 ]
 
 
@@ -156,7 +158,7 @@ const Hero = () => {
       </div>
 
       <div className="border-y-2 place-items-center grid grid-cols-3 grid-rows-1 py-12">
-        <Image src="./icons/applelogo.svg" width={95} height={95} alt={""} />
+        <Image src="./icons/kohlslogo.svg" width={200} height={200} alt={""} className="" />
         <Image src="./icons/teslalogo.svg" width={95} height={95} alt={""} />
         <Image src="./icons/googlelogo.svg" width={95} height={95} alt={""} />
       </div>
@@ -189,7 +191,7 @@ const Hero = () => {
         <h2 className="text-1xl font-bold pb-10 pt-3 text-gray-400">
           Our past events.
         </h2>
-        <div className="flex items-center min-w-fit snap-center overflow-scroll grid grid-flow-col p-6 gap-8 justify-between">
+        <div className="flex-cols md:flex items-center md:gap-5 overflow-auto p-10 mb-5">
           {card.map(event => {
             return (
               <SpotLightCard type={event.type} image={event.image} title={event.title} description={event.description} key={event.id} id={undefined} />
@@ -197,7 +199,9 @@ const Hero = () => {
           })}
         </div>
         <GetInvolved />
+    
       </div>
+      {/*
       <h1 className="pt-16 text-4xl font-bold">Testimonials</h1>
       <h2 className="text-1xl font-bold pb-4 pt-3 text-gray-400">
         From our dedicated members and supportive alumni.
@@ -252,6 +256,7 @@ const Hero = () => {
           buttonStyling={annualPlan.buttonStyling}
         />
       </div>
+        */}
         
     </div>
   );

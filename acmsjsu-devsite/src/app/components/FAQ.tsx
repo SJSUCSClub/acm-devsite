@@ -7,22 +7,23 @@ const FAQ = () => {
     {
       question: "Who's allowed to join this club?",
       answer:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce id magna iaculis augue vulputate fermentum. Pellentesque quis magna dolor. Sed congue velit id nulla ultricies consequat. Etiam egestas lectus nec felis convallis cursus. Integer blandit ipsum eu pellentesque eleifend. Cras et urna condimentum ante blandit pretium. Donec bibendum massa id ante pellentesque dignissim. Quisque arcu elit, rhoncus ac lobortis a, malesuada eu libero. Cras pharetra purus vel pretium sodales.",
+        "ACM@SJSU is open to all SJSU students, regardless of their major!",
     },
     {
       question: "What are the rules of the club?",
       answer:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce id magna iaculis augue vulputate fermentum. Pellentesque quis magna dolor. Sed congue velit id nulla ultricies consequat. Etiam egestas lectus nec felis convallis cursus. Integer blandit ipsum eu pellentesque eleifend. Cras et urna condimentum ante blandit pretium. Donec bibendum massa id ante pellentesque dignissim. Quisque arcu elit, rhoncus ac lobortis a, malesuada eu libero. Cras pharetra purus vel pretium sodales.",
+        " Be respectful, keep the clubroom clean, and have fun!",
+
     },
     {
       question: "Is there a membership fee for the club?",
       answer:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce id magna iaculis augue vulputate fermentum. Pellentesque quis magna dolor. Sed congue velit id nulla ultricies consequat. Etiam egestas lectus nec felis convallis cursus. Integer blandit ipsum eu pellentesque eleifend. Cras et urna condimentum ante blandit pretium. Donec bibendum massa id ante pellentesque dignissim. Quisque arcu elit, rhoncus ac lobortis a, malesuada eu libero. Cras pharetra purus vel pretium sodales.",
+        "Yes. It's $20 for 1 semester or $30 for 2 semesters.",
     },
     {
       question: "What do I get for a paid membership?",
       answer:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce id magna iaculis augue vulputate fermentum. Pellentesque quis magna dolor. Sed congue velit id nulla ultricies consequat. Etiam egestas lectus nec felis convallis cursus. Integer blandit ipsum eu pellentesque eleifend. Cras et urna condimentum ante blandit pretium. Donec bibendum massa id ante pellentesque dignissim. Quisque arcu elit, rhoncus ac lobortis a, malesuada eu libero. Cras pharetra purus vel pretium sodales.",
+        "Paid members are invited to attend exclusive networking sessions, tech talks, and company events. We collaborate with many industry leaders, including Google, Tesla, and Nvidia, so don't miss out!",
     },
   ];
 
@@ -37,15 +38,15 @@ const FAQ = () => {
   };
   return (
     <>
-      <div className="footer bg-black w-full h-[600px]">
+      <div className="footer bg-black w-full flex-rows">
        
      
-      <div className="text-white text-5xl flex justify-center font-bold">
-        <div className="mt-16">
+      <div className="text-white text-4xl md:text-5xl flex justify-center text-center font-bold">
+        <div className="mt-10">
           <h1>Questions? We Got Answers. </h1>
         </div>
       </div>
-      <div className="text-white font-bold text-xl flex justify-center mt-10">
+      <div className="text-white font-bold text-xl flex justify-center mt-10 mb-10 ">
         <div className="w-1/2 ">
           {questions.map((questionObj, index) => (
             <div key={index}>
