@@ -12,7 +12,8 @@ const FAQ = () => {
     {
       question: "What are the rules of the club?",
       answer:
-        "1. Be respectful",
+        " Be respectful, keep the clubroom clean, and have fun!",
+
     },
     {
       question: "Is there a membership fee for the club?",
@@ -40,7 +41,7 @@ const FAQ = () => {
       <div className="footer bg-black w-full flex-rows">
        
      
-      <div className="text-white text-5xl flex justify-center font-bold">
+      <div className="text-white text-4xl md:text-5xl flex justify-center text-center font-bold">
         <div className="mt-10">
           <h1>Questions? We Got Answers. </h1>
         </div>
