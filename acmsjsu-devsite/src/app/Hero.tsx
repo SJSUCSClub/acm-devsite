@@ -191,7 +191,7 @@ const Hero = () => {
         <h2 className="text-1xl font-bold pb-10 pt-3 text-gray-400">
           Our past events.
         </h2>
-        <div className="flex-cols md:flex items-center md:gap-5 overflow-auto p-10 mb-5">
+        <div className="flex-cols gap-3 md:flex items-center md:gap-5 overflow-auto p-10 mb-5">
           {card.map(event => {
             return (
               <SpotLightCard type={event.type} image={event.image} title={event.title} description={event.description} key={event.id} id={undefined} />
