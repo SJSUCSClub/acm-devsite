@@ -157,10 +157,11 @@ const Hero = () => {
         </div>
       </div>
 
-      <div className="border-y-2 place-items-center grid grid-cols-3 grid-rows-1 py-12">
+      <div className="border-y-2 place-items-center grid grid-cols-4 grid-rows-1 py-12">
         <Image src="./icons/kohlslogo.svg" width={200} height={200} alt={""} className="" />
         <Image src="./icons/teslalogo.svg" width={95} height={95} alt={""} />
         <Image src="./icons/googlelogo.svg" width={95} height={95} alt={""} />
+        <Image src="/icons/fetch-ai.png" width={250} height={95} alt={""} />
       </div>
 
       <div className="border-y-2 place-items-center py-5">
@@ -168,7 +169,7 @@ const Hero = () => {
         <h2 className="text-1xl font-bold mb-2 pt-3 text-gray-400">
           We have a place for everyone.
         </h2>
-        <div className="place-items-center grid grid-flow-col grid-cols-3 grid-rows-1 py-10">
+        <div className="place-items-center grid grid-cols-3 grid-rows-1 py-10 gap-64">
           <div className="text-[#8F69C2] font-semibold stroke-slate-500">
             <Image className="py-3" src="./icons/softwareicon.svg" width={105} height={105} alt={""} />
             Software
