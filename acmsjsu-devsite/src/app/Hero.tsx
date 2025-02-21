@@ -133,7 +133,7 @@ const Hero = () => {
             Linkedin
           </Link>
 
-          <Link className="justify-center relative transition font-bold ease-in-out hover:text-white hover:scale-110 shadow-md flex  border-[#ecd79c] border-2 rounded-3xl py-2 px-4 bg-[#f3c954] text-white" target="_blank" href="https://docs.google.com/forms/d/e/1FAIpQLSf1KNg9T5sPAM9EtOm3i_bQctlq81b7QIns1uNkWtlSCpzOvg/viewform">
+          <Link className="justify-center relative transition font-bold ease-in-out hover:text-white hover:scale-110 shadow-md flex  border-[#ecd79c] border-2 rounded-3xl py-2 px-4 bg-[#f3c954] text-white" target="_blank" href="https://docs.google.com/forms/d/e/1FAIpQLSfNBu-IGm7bhUmMf2cSOmNca3SiJZyVRzPBVTVOYVBNZIyeYA/viewform?pli=1">
             Become a Member
             <Image className="pl-[2%] w-[4vw] md:w-[22px] h-auto" src="./icons/right-chevron.svg" width={0} height={0} alt={""} />
           </Link>
