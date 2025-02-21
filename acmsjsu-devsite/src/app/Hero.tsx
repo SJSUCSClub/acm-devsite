@@ -151,7 +151,7 @@ const Hero = () => {
           <div className="py-4 text-base font-normal"> Engage with other ACM at SJSU members and elevate your tech journey. Access valuable resources like mock interviews for interview prep, thrilling hackathons, and coding competitions. Connect with industry leaders like Apple, Tesla, and <b>Google</b> for exclusive networking opportunities.
           </div>
 
-          <Link className="flex text-[#1a6096] pb-14" target="_blank" href="https://docs.google.com/forms/d/e/1FAIpQLSf1KNg9T5sPAM9EtOm3i_bQctlq81b7QIns1uNkWtlSCpzOvg/viewform">
+          <Link className="flex text-[#1a6096] pb-14" target="_blank" href="https://docs.google.com/forms/d/e/1FAIpQLSfNBu-IGm7bhUmMf2cSOmNca3SiJZyVRzPBVTVOYVBNZIyeYA/viewform?pli=1">
             Become a member {">"}
           </Link>
         </div>
