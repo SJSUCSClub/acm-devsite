@@ -1,115 +1,5 @@
-import OfficerCard from "../components/about/OfficerCard";
 import TextWithImage from "../components/about/TextWithImage";
 import MemberButton from "../components/buttons/MemberButton";
-
-const developers = [
-  {
-    pfp: "/pfps/anishka.png",
-    name: "Anishka Chauhan",
-    position: null,
-    linkedin: "https://www.linkedin.com/in/anishka-chauhan/",
-  },
-  {
-    pfp: "/pfps/dylan.jpg",
-    name: "Dylan Huang",
-    position: null,
-    linkedin: "https://www.linkedin.com/in/huang-dylan/",
-  },
-  {
-    pfp: "/pfps/justin.JPG",
-    name: "Justin Lee",
-    position: null,
-    linkedin: "https://www.linkedin.com/in/justin-lee-a670531ab",
-  },
-  {
-    pfp: "/pfps/kevin.jpg",
-    name: "Kevin Tsoi",
-    position: null,
-    linkedin: "https://www.linkedin.com/in/kevin-tsoi/",
-  },
-  {
-    pfp: "/pfps/kiet.jpg",
-    name: "Kiet Quan",
-    position: null,
-    linkedin: "https://www.linkedin.com/in/kiet-quan-software-engineer/",
-  },
-  {
-    pfp: "/pfps/marvin.jpg",
-    name: "Marvin Zhai",
-    position: null,
-    linkedin: "https://www.linkedin.com/in/marvin-zhai-739144278/",
-  },
-  {
-    pfp: "/pfps/ronald.jpg",
-    name: "Ronald Li",
-    position: null,
-    linkedin: "https://www.linkedin.com/in/ronaldli666/",
-  },
-  {
-    pfp: "/pfps/agamjot.png",
-    name: "Agamjot Singh",
-    position: null,
-    linkedin: "www.linkedin.com/in/agamjotsingh05",
-  },
-];
-
-const officers = [
-  {
-    pfp: "/pfps/Karthik.png",
-    name: "Karthik",
-    position: "PRESIDENT",
-    linkedin: "https://www.linkedin.com/in/karthikmanishankar/",
-  },
-
-  {
-    pfp: "/pfps/shirleyli.png",
-    name: "Shirley Li",
-    position: "VICE PRESIDENT",
-    linkedin: "https://www.linkedin.com/in/shirley-shuhua-li",
-  },
-
-  {
-    pfp: "/pfps/angela.png",
-    name: "Angela Huang",
-    position: "SECRETARY",
-    linkedin: "https://www.linkedin.com/in/angela-huang-725a25169/",
-  },
-
-  {
-    pfp: "/pfps/bineet.jpeg",
-    name: "Bineet Anand",
-    position: "SOCIAL MEDIA",
-    linkedin: "https://www.linkedin.com/in/bineet-anand/",
-  },
-
-  {
-    pfp: "/pfps/annemai.jpeg",
-    name: "Anne Mai",
-    position: "EVENT CHAIR",
-    linkedin: "https://www.linkedin.com/in/annepmai/",
-  },
-
-  {
-    pfp: "/pfps/tim.png",
-    name: "Timothy Kim",
-    position: "TREASURER",
-    linkedin: "https://www.linkedin.com/in/timothy-kim712/",
-  },
-
-  {
-    pfp: "/pfps/trique.jpeg",
-    name: "Trique Nguyen",
-    position: "DEV TEAM LEAD",
-    linkedin: "https://www.linkedin.com/in/trique-nguyen/",
-  },
-
-  {
-    pfp: "/pfps/galit.png",
-    name: "Galit Bolotin",
-    position: "EVENT CHAIR",
-    linkedin: "https://www.linkedin.com/in/gbolotin/",
-  },
-];
 
 const page = () => {
   return (
@@ -208,13 +98,14 @@ const page = () => {
           You can join any of our teams to explore your interests and develop
           new skills as a member of the club.
         </p>
-        <h1 className="pt-4 font-bold md:text-2xl text-lg text-center text-[#8F69C2]">Software</h1>
+        <h1 className="pt-4 font-bold md:text-2xl text-lg text-center text-[#8F69C2]">
+          Software
+        </h1>
         <TextWithImage
           reverse={true}
           logo={true}
           imagePath="/icons/softwareicon.svg"
           imageAlt=""
-         
         >
           <p>
             This group is committed to providing students with the chance to
@@ -225,8 +116,14 @@ const page = () => {
           </p>
         </TextWithImage>
 
-        <h1 className="font-bold mt-2 md:text-2xl text-lg text-center text-[#C28F69]">Hardware</h1>
-        <TextWithImage logo={true} imagePath="/icons/hardwareicon.svg" imageAlt="">
+        <h1 className="font-bold mt-2 md:text-2xl text-lg text-center text-[#C28F69]">
+          Hardware
+        </h1>
+        <TextWithImage
+          logo={true}
+          imagePath="/icons/hardwareicon.svg"
+          imageAlt=""
+        >
           <p>
             This team is committed to immersing students in the world of
             hardware by engaging them in tangible projects and experiments. We
@@ -235,13 +132,14 @@ const page = () => {
             technological innovation in the industry.
           </p>
         </TextWithImage>
-        <h1 className="font-bold md:text-2xl text-lg text-center text-[#69C28F]">Design</h1>
+        <h1 className="font-bold md:text-2xl text-lg text-center text-[#69C28F]">
+          Design
+        </h1>
         <TextWithImage
           reverse={true}
           logo={true}
           imagePath="/icons/designicon.svg"
           imageAlt=""
-         
         >
           <p>
             Our design squad is focused on guiding students through the creative
@@ -254,45 +152,6 @@ const page = () => {
 
         <div className="flex gap-4 items-center justify-center">
           <MemberButton />
-        </div>
-      </div>
-
-      <hr className="border-neutral my-10"></hr>
-      <div className="officers">
-        <h1 className="text-4xl text-center font-bold">Officers</h1>
-        <h2 className="text-neutral text-xl text-center font-bold mt-4 mb-8">
-          The crew behind the ship.
-        </h2>
-        <div className="flex flex-col items-center justify-center gap-16 sm:gap-8 mx-[-10%]">
-          <div className="sm:flex sm:flex-wrap gap-x-10 items-center justify-center">
-            {officers.map((officer, index) => (
-              <OfficerCard
-                key={index}
-                name={officer.name}
-                position={officer.position}
-                photo={officer.pfp}
-                linkedin={officer.linkedin}
-              />
-            ))}
-          </div>
-        </div>
-      </div>
-      <div className="devteam">
-        <h1 className="text-4xl text-center font-bold my-8">
-          Development Team
-        </h1>
-        <div className="flex flex-col items-center justify-center gap-16 sm:gap-8 mx-[-10%]">
-          <div className="sm:flex sm:flex-wrap gap-x-10 items-center justify-center">
-            {developers.map((developer, index) => (
-              <OfficerCard
-                key={index}
-                name={developer.name}
-                position={developer.position}
-                photo={developer.pfp}
-                linkedin={developer.linkedin}
-              />
-            ))}
-          </div>
         </div>
       </div>
     </div>

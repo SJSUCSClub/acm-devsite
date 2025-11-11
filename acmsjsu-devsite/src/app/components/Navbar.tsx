@@ -29,6 +29,7 @@ const Navbar = () => {
 
         <div className="hidden md:flex grid grid-flow-col gap-4 items-center text-right justify-right">
           <LinkCard path="/about" pathName="About Us" />
+          <LinkCard path="/board" pathName="Board" />
           <LinkCard path="/events" pathName="Events" />
         </div>
 
@@ -67,6 +68,7 @@ const Navbar = () => {
         onClick={handleClick}
       >
         <LinkCard path="/about" pathName="About Us" />
+        <LinkCard path="/board" pathName="Board" />
         <LinkCard path="/events" pathName="Events" />
       </div>
     </div>
