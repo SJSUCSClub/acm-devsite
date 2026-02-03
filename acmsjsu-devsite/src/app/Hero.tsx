@@ -110,7 +110,7 @@ const annualPlan = {
 
 const Hero = () => {
   const [card, setSpotlightPast] = useState(spotlights)
-  const membershipFormURL = "https://docs.google.com/forms/d/e/1FAIpQLScnSHDjakqUK9tODMzL-KFW7hYk1WhumFcYvILuAX2_G-P7fA/viewform?usp=sharing&ouid=116870234503725176683"
+  const membershipFormURL = "https://forms.gle/cTwLkmFd9cHS4hrZ9"
   return (
     <div className="text-center min-w-full flex-col items-center justify-between pt-10 pb-20 px-[5%]">
       <div className="min-h-screen">
