@@ -1,11 +1,9 @@
 import ACMCSHero from "acm-cs-sjsu-hero-component";
+import Image from "next/image";
 import Link from "next/link";
-import GetInvolvedCard from "./components/GetInvolvedCard";
+import { useState } from "react";
 import GetInvolved from "./components/ButtonGetInvolved";
 import SpotLightCard from "./components/SpotlightCard";
-import TestimonialCard from "./components/TestimonialCard";
-import Image from "next/image"
-import { useState } from "react";
 
 const spotlights: ISpotlight[] = [
   {
@@ -134,10 +132,10 @@ const Hero = () => {
             Linkedin
           </Link>
 
-          <Link className="justify-center relative transition font-bold ease-in-out hover:text-white hover:scale-110 shadow-md flex  border-[#ecd79c] border-2 rounded-3xl py-2 px-4 bg-[#f3c954] text-white" target="_blank" href={membershipFormURL}>
+          {/* <Link className="justify-center relative transition font-bold ease-in-out hover:text-white hover:scale-110 shadow-md flex  border-[#ecd79c] border-2 rounded-3xl py-2 px-4 bg-[#f3c954] text-white" target="_blank" href={membershipFormURL}>
             Become a Member
             <Image className="pl-[2%] w-[4vw] md:w-[22px] h-auto" src="./icons/right-chevron.svg" width={0} height={0} alt={""} />
-          </Link>
+          </Link> */}
         </div>
 
         <div className="animate-[fadeIn_2s_ease-in-out] text-left inline flex flex-col gap-4">
@@ -152,9 +150,9 @@ const Hero = () => {
           <div className="py-4 text-base font-normal"> Engage with other ACM at SJSU members and elevate your tech journey. Access valuable resources like mock interviews for interview prep, thrilling hackathons, and coding competitions. Connect with industry leaders like Apple, Tesla, and <b>Google</b> for exclusive networking opportunities.
           </div>
 
-          <Link className="flex text-[#1a6096] pb-14" target="_blank" href={membershipFormURL}>
+          {/* <Link className="flex text-[#1a6096] pb-14" target="_blank" href={membershipFormURL}>
             Become a member {">"}
-          </Link>
+          </Link> */}
         </div>
       </div>
 
